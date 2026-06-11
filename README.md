@@ -11,8 +11,9 @@ Cotter is a tool that provides fast and reliable:
 
 # Premium - How to get it? 
 ![alt text](https://github.com/volegnar/cotter/blob/main/assets/diamond.gif?raw=true)
-- Create a donation to the address at the bottom
-- Code will be sent to you in some way
+- Make a donation to the xmr address at the bottom
+- send an xmpp message to volegnar@5222.de (more info in chat)
+- code will be sent back to you
 
 (each generated code works only on a specific version. )
 
