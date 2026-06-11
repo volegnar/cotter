@@ -7,4 +7,4 @@ Cotter is a tool that provides fast and reliable:
 - network ip address scan
 - udp port listener
 
-![alt text]((https://github.com/volegnar/cotter/blob/main/assets/mobile_screenshot.jpg)?raw=true)
+![alt text](https://github.com/volegnar/cotter/blob/main/assets/mobile_screenshot.jpg?raw=true)
