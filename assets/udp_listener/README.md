@@ -1,12 +1,21 @@
-#UDP Listener native extension
+# UDP Listener native extension
 this extension is used by Cotter
 
-#How to use:
+# How to use:
 ```lua
 local port = 8888
 myextension.start(port)
 
+-- in update function:
 local packets = myextension.udp_poll()
+
+for i = 1, #packets do
+	local p = packets[i]
+	local msg = tostring(p.msg):gsub("[\r\n]+", "")
+	local ip = tostring(p.ip):gsub("[\r\n]+", "")
+	local line = msg .. " | " .. ip
+	table.insert(self.listens, line)
+end
 
 local status = myextension.get_status()
 if status.state == "error" then
