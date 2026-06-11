@@ -1,5 +1,5 @@
-# Network interfaces and their coloring scheme: (version 1.0) (Android)
-This module is used by Cotter
+# Network interfaces and their coloring scheme: (for Android)
+This lua module is used by Cotter
 
 if you want changes to be made on the interfaces
 make sure to leave a comment!
