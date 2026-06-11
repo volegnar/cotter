@@ -1,5 +1,5 @@
 # UDP Listener native extension
-this extension is used by Cotter
+this native extension is used by Cotter and it is ONLY for udp packets
 
 # How to use:
 ```lua
