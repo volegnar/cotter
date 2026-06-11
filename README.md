@@ -17,6 +17,7 @@ Cotter is a tool that provides fast and reliable:
 (each generated code works only on a specific version. )
 
 # Donations:
-![alt text](https://github.com/volegnar/cotter/blob/main/assets/qr.png?raw=true)
+![alt text](https://github.com/volegnar/cotter/blob/main/assets/qr.png?raw=true) 
+
 Monero address for donations:
 424QtdMrhZM8HXXeaqJQ9h4K47G7PSqRigBVa9h8mGyZSwVpSd6XttTUjzwKRrF21LfaiYzp8qsvkTFxxxCk6TFdNBK3ESF
