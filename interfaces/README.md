@@ -8,7 +8,7 @@ make sure to leave a comment!
 local M = {}
 
 M.mobile = {
-	color = vmath.vector4(1.0, 0.3, 0.3, 1), -- watermelon
+	color = vmath.vector4(1.0, 0.22, 0.22, 1), -- watermelon
 	items = {
 		"pdp1", "pdp2", "pdp_ip0", "pdp_ip1", "vnet0", "vnet1",
 		"rmnet_ipa0", "rmnet_ipa1", "wwan0", "wwan1", "ccmni0", 
@@ -29,7 +29,7 @@ M.hotspot = {
 }
 
 M.wifidirect = {
-	color = vmath.vector4(1.0, 0.1, 0.7, 1), -- pink
+	color = vmath.vector4(1.0, 0.0, 1.0, 1), -- magenta
 	items = {
 		"p2p0", "p2p1", "p2p-p2p0", "p2p-p2p1", "p2p-wlan0-0", "p2p-wlan0-1", 
 		"p2p-dev-wlan0", "p2p-dev-wlan1", "wigig0", "wifi-aware0", 
@@ -60,7 +60,7 @@ M.loopback = {
 }
 
 M.wireless = {
-	color = vmath.vector4(0.5, 1, 0.8, 1), -- mint
+	color = vmath.vector4(0.6, 1.0, 0.2, 1), -- lime
 	items = {
 		"wlan0",
 	}
@@ -74,11 +74,16 @@ M.physical = {
 }
 
 M.wificalling = {
-	color = vmath.vector4(1.0, 0.0, 1.0, 1), -- magenta
+	color = vmath.vector4(0.0, 1.0, 1.0, 1), -- cyan
 	items = {
 		"epdg0", "epdg1", "epdg2", "epdg3", "epdg4", "epdg5", 
 		"epd6", "epdg7", 
 	}
+}
+
+M.unknown = {
+	color = vmath.vector4(0.96, 0.86, 0.70, 1), -- beige
+	items = {}
 }
 
 return M
