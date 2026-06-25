@@ -9,6 +9,9 @@ Cotter is a tool that provides fast and reliable:
 
 ![alt text](https://github.com/volegnar/cotter/blob/main/assets/mobile_screenshot.png?raw=true)
 
+# Compile
+Cotter can be compiled with Defold 1.11.0
+
 # Donations:
 
 ![alt text](https://github.com/volegnar/cotter/blob/main/assets/qr.png?raw=true)
