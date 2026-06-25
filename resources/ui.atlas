@@ -1,0 +1,256 @@
+images {
+  image: "/assets/ui/ConnectOff.png"
+}
+images {
+  image: "/assets/ui/ConnectOn.png"
+}
+images {
+  image: "/assets/ui/DroidIcon.png"
+}
+images {
+  image: "/assets/ui/LinuxIcon.png"
+}
+images {
+  image: "/assets/ui/OSIcon.png"
+}
+images {
+  image: "/assets/ui/ErrorIcon.png"
+}
+images {
+  image: "/assets/ui/WorldIcon.png"
+}
+images {
+  image: "/assets/ui/LocalIcon.png"
+}
+images {
+  image: "/assets/ui/DeadWorldIcon.png"
+}
+images {
+  image: "/assets/ui/InterfaceIcon.png"
+}
+images {
+  image: "/assets/ui/LongBox.png"
+}
+images {
+  image: "/assets/ui/CoupleBox.png"
+}
+images {
+  image: "/assets/ui/SquareBox.png"
+}
+images {
+  image: "/assets/ui/RectangleBox.png"
+}
+images {
+  image: "/assets/ui/SmallCoupleBox.png"
+}
+images {
+  image: "/assets/ui/ArrowIcon.png"
+}
+images {
+  image: "/assets/ui/Keyboard.png"
+}
+images {
+  image: "/assets/ui/IpsIcon.png"
+}
+images {
+  image: "/assets/ui/PortIcon.png"
+}
+images {
+  image: "/assets/ui/RedPortIcon.png"
+}
+images {
+  image: "/assets/ui/GreenPortIcon.png"
+}
+images {
+  image: "/assets/ui/PortsIcon.png"
+}
+images {
+  image: "/assets/ui/PortsRedIcon.png"
+}
+images {
+  image: "/assets/ui/SettingsIcon.png"
+}
+images {
+  image: "/assets/ui/MusicIcon.png"
+}
+images {
+  image: "/assets/ui/True.png"
+}
+images {
+  image: "/assets/ui/DarkModeIcon.png"
+}
+images {
+  image: "/assets/ui/LightModeIcon.png"
+}
+images {
+  image: "/assets/ui/ResultsFrame.png"
+}
+images {
+  image: "/assets/ui/EarIcon.png"
+}
+images {
+  image: "/assets/ui/FilesIcon.png"
+}
+images {
+  image: "/assets/ui/FirewallIcon.png"
+}
+images {
+  image: "/assets/ui/KeyboardIcon.png"
+}
+images {
+  image: "/assets/ui/PCIcon.png"
+}
+images {
+  image: "/assets/ui/PenIcon.png"
+}
+images {
+  image: "/assets/ui/PhoneIcon.png"
+}
+images {
+  image: "/assets/ui/SecRed.png"
+}
+images {
+  image: "/assets/ui/SecGreen.png"
+}
+images {
+  image: "/assets/ui/SecYellow.png"
+}
+images {
+  image: "/assets/ui/TrashIcon.png"
+}
+images {
+  image: "/assets/ui/MagnifierIcon.png"
+}
+images {
+  image: "/assets/ui/PacketIcon.png"
+}
+images {
+  image: "/assets/ui/PauseIcon.png"
+}
+images {
+  image: "/assets/ui/PlayIcon.png"
+}
+images {
+  image: "/assets/ui/DoubleBox.png"
+}
+images {
+  image: "/assets/ui/QuestionBox.png"
+}
+images {
+  image: "/assets/ui/HelpIcon.png"
+}
+images {
+  image: "/assets/ui/TorIcon.png"
+}
+images {
+  image: "/assets/ui/SwitchOff.png"
+}
+images {
+  image: "/assets/ui/SwitchOn.png"
+}
+images {
+  image: "/assets/ui/MediumBox.png"
+}
+images {
+  image: "/assets/ui/WarnBox.png"
+}
+images {
+  image: "/assets/ui/TripleBox.png"
+}
+images {
+  image: "/assets/ui/MacIcon.png"
+}
+images {
+  image: "/assets/ui/RealWorldIcon.png"
+}
+images {
+  image: "/assets/ui/blur.png"
+}
+images {
+  image: "/assets/ui/GeolocationIcon.png"
+}
+images {
+  image: "/assets/ui/DeadGeolocationIcon.png"
+}
+images {
+  image: "/assets/ui/KeyIcon.png"
+}
+images {
+  image: "/assets/ui/DeadTorIcon.png"
+}
+images {
+  image: "/assets/ui/DevIcon.png"
+}
+images {
+  image: "/assets/ui/RefreshIcon2.png"
+}
+images {
+  image: "/assets/ui/LongestBox.png"
+}
+images {
+  image: "/assets/ui/SupportIcon.png"
+}
+images {
+  image: "/assets/ui/SupportBg.png"
+}
+images {
+  image: "/assets/ui/SupportBg2.png"
+}
+animations {
+  id: "Refresh"
+  images {
+    image: "/assets/ui/RefreshIcon1.png"
+  }
+  images {
+    image: "/assets/ui/RefreshIcon2.png"
+  }
+  images {
+    image: "/assets/ui/RefreshIcon3.png"
+  }
+  images {
+    image: "/assets/ui/RefreshIcon4.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 6
+}
+animations {
+  id: "RouterIcon"
+  images {
+    image: "/assets/ui/Router1.png"
+  }
+  images {
+    image: "/assets/ui/Router2.png"
+  }
+  playback: PLAYBACK_LOOP_PINGPONG
+  fps: 4
+}
+animations {
+  id: "DiamondIcon"
+  images {
+    image: "/assets/ui/diamond0.png"
+  }
+  images {
+    image: "/assets/ui/diamond1.png"
+  }
+  images {
+    image: "/assets/ui/diamond2.png"
+  }
+  images {
+    image: "/assets/ui/diamond3.png"
+  }
+  images {
+    image: "/assets/ui/diamond4.png"
+  }
+  images {
+    image: "/assets/ui/diamond5.png"
+  }
+  images {
+    image: "/assets/ui/diamond6.png"
+  }
+  images {
+    image: "/assets/ui/diamond7.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 5
+}
+extrude_borders: 2

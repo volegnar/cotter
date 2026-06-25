@@ -1,0 +1,3880 @@
+script: "/main/main.gui_script"
+fonts {
+  name: "main"
+  font: "/resources/main.font"
+}
+textures {
+  name: "ui"
+  texture: "/resources/ui.atlas"
+}
+nodes {
+  position {
+    x: 180.0
+    y: 380.0
+  }
+  scale {
+    x: 0.225
+    y: 0.225
+  }
+  size {
+    x: 1600.0
+    y: 17000.0
+  }
+  type: TYPE_TEXT
+  font: "main"
+  id: "results"
+  pivot: PIVOT_N
+  line_break: true
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -720.0
+    y: -80.0
+  }
+  scale {
+    x: 4.0
+    y: 4.0
+  }
+  type: TYPE_BOX
+  texture: "ui/InterfaceIcon"
+  id: "InterScroll1"
+  parent: "results"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 24.0
+  }
+  scale {
+    x: 0.24
+    y: 0.24
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "interface"
+  font: "main"
+  id: "InterScrollName1"
+  pivot: PIVOT_W
+  parent: "InterScroll1"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    y: -20.0
+  }
+  scale {
+    x: 0.2
+    y: 0.2
+  }
+  size {
+    x: 1800.0
+    y: 200.0
+  }
+  type: TYPE_TEXT
+  font: "main"
+  id: "InterScrollText1"
+  pivot: PIVOT_NW
+  line_break: true
+  parent: "InterScroll1"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -720.0
+    y: -380.0
+  }
+  scale {
+    x: 4.0
+    y: 4.0
+  }
+  type: TYPE_BOX
+  texture: "ui/InterfaceIcon"
+  id: "InterScroll2"
+  parent: "results"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 24.0
+  }
+  scale {
+    x: 0.24
+    y: 0.24
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "interface"
+  font: "main"
+  id: "InterScrollName2"
+  pivot: PIVOT_W
+  parent: "InterScroll2"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    y: -20.0
+  }
+  scale {
+    x: 0.2
+    y: 0.2
+  }
+  size {
+    x: 1800.0
+    y: 200.0
+  }
+  type: TYPE_TEXT
+  font: "main"
+  id: "InterScrollText2"
+  pivot: PIVOT_NW
+  line_break: true
+  parent: "InterScroll2"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -720.0
+    y: -680.0
+  }
+  scale {
+    x: 4.0
+    y: 4.0
+  }
+  type: TYPE_BOX
+  texture: "ui/InterfaceIcon"
+  id: "InterScroll3"
+  parent: "results"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 24.0
+  }
+  scale {
+    x: 0.24
+    y: 0.24
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "interface"
+  font: "main"
+  id: "InterScrollName3"
+  pivot: PIVOT_W
+  parent: "InterScroll3"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    y: -20.0
+  }
+  scale {
+    x: 0.2
+    y: 0.2
+  }
+  size {
+    x: 1800.0
+    y: 200.0
+  }
+  type: TYPE_TEXT
+  font: "main"
+  id: "InterScrollText3"
+  pivot: PIVOT_NW
+  line_break: true
+  parent: "InterScroll3"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -720.0
+    y: -980.0
+  }
+  scale {
+    x: 4.0
+    y: 4.0
+  }
+  type: TYPE_BOX
+  texture: "ui/InterfaceIcon"
+  id: "InterScroll4"
+  parent: "results"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 24.0
+  }
+  scale {
+    x: 0.24
+    y: 0.24
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "interface"
+  font: "main"
+  id: "InterScrollName4"
+  pivot: PIVOT_W
+  parent: "InterScroll4"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    y: -20.0
+  }
+  scale {
+    x: 0.2
+    y: 0.2
+  }
+  size {
+    x: 1800.0
+    y: 200.0
+  }
+  type: TYPE_TEXT
+  font: "main"
+  id: "InterScrollText4"
+  pivot: PIVOT_NW
+  line_break: true
+  parent: "InterScroll4"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -720.0
+    y: -1280.0
+  }
+  scale {
+    x: 4.0
+    y: 4.0
+  }
+  type: TYPE_BOX
+  texture: "ui/InterfaceIcon"
+  id: "InterScroll5"
+  parent: "results"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 24.0
+  }
+  scale {
+    x: 0.24
+    y: 0.24
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "interface"
+  font: "main"
+  id: "InterScrollName5"
+  pivot: PIVOT_W
+  parent: "InterScroll5"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    y: -20.0
+  }
+  scale {
+    x: 0.2
+    y: 0.2
+  }
+  size {
+    x: 1800.0
+    y: 200.0
+  }
+  type: TYPE_TEXT
+  font: "main"
+  id: "InterScrollText5"
+  pivot: PIVOT_NW
+  line_break: true
+  parent: "InterScroll5"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -720.0
+    y: -1580.0
+  }
+  scale {
+    x: 4.0
+    y: 4.0
+  }
+  type: TYPE_BOX
+  texture: "ui/InterfaceIcon"
+  id: "InterScroll6"
+  parent: "results"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 24.0
+  }
+  scale {
+    x: 0.24
+    y: 0.24
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "interface"
+  font: "main"
+  id: "InterScrollName6"
+  pivot: PIVOT_W
+  parent: "InterScroll6"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    y: -20.0
+  }
+  scale {
+    x: 0.2
+    y: 0.2
+  }
+  size {
+    x: 1800.0
+    y: 200.0
+  }
+  type: TYPE_TEXT
+  font: "main"
+  id: "InterScrollText6"
+  pivot: PIVOT_NW
+  line_break: true
+  parent: "InterScroll6"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -720.0
+    y: -1880.0
+  }
+  scale {
+    x: 4.0
+    y: 4.0
+  }
+  type: TYPE_BOX
+  texture: "ui/InterfaceIcon"
+  id: "InterScroll7"
+  parent: "results"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 24.0
+  }
+  scale {
+    x: 0.24
+    y: 0.24
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "interface"
+  font: "main"
+  id: "InterScrollName7"
+  pivot: PIVOT_W
+  parent: "InterScroll7"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    y: -20.0
+  }
+  scale {
+    x: 0.2
+    y: 0.2
+  }
+  size {
+    x: 1800.0
+    y: 200.0
+  }
+  type: TYPE_TEXT
+  font: "main"
+  id: "InterScrollText7"
+  pivot: PIVOT_NW
+  line_break: true
+  parent: "InterScroll7"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -720.0
+    y: -2180.0
+  }
+  scale {
+    x: 4.0
+    y: 4.0
+  }
+  type: TYPE_BOX
+  texture: "ui/InterfaceIcon"
+  id: "InterScroll8"
+  parent: "results"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 24.0
+  }
+  scale {
+    x: 0.24
+    y: 0.24
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "interface"
+  font: "main"
+  id: "InterScrollName8"
+  pivot: PIVOT_W
+  parent: "InterScroll8"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    y: -20.0
+  }
+  scale {
+    x: 0.2
+    y: 0.2
+  }
+  size {
+    x: 1800.0
+    y: 200.0
+  }
+  type: TYPE_TEXT
+  font: "main"
+  id: "InterScrollText8"
+  pivot: PIVOT_NW
+  line_break: true
+  parent: "InterScroll8"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -720.0
+    y: -2480.0
+  }
+  scale {
+    x: 4.0
+    y: 4.0
+  }
+  type: TYPE_BOX
+  texture: "ui/InterfaceIcon"
+  id: "InterScroll9"
+  parent: "results"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 24.0
+  }
+  scale {
+    x: 0.24
+    y: 0.24
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "interface"
+  font: "main"
+  id: "InterScrollName9"
+  pivot: PIVOT_W
+  parent: "InterScroll9"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    y: -20.0
+  }
+  scale {
+    x: 0.2
+    y: 0.2
+  }
+  size {
+    x: 1800.0
+    y: 200.0
+  }
+  type: TYPE_TEXT
+  font: "main"
+  id: "InterScrollText9"
+  pivot: PIVOT_NW
+  line_break: true
+  parent: "InterScroll9"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -720.0
+    y: -2780.0
+  }
+  scale {
+    x: 4.0
+    y: 4.0
+  }
+  type: TYPE_BOX
+  texture: "ui/InterfaceIcon"
+  id: "InterScroll10"
+  parent: "results"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 24.0
+  }
+  scale {
+    x: 0.24
+    y: 0.24
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "interface"
+  font: "main"
+  id: "InterScrollName10"
+  pivot: PIVOT_W
+  parent: "InterScroll10"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    y: -20.0
+  }
+  scale {
+    x: 0.2
+    y: 0.2
+  }
+  size {
+    x: 1800.0
+    y: 200.0
+  }
+  type: TYPE_TEXT
+  font: "main"
+  id: "InterScrollText10"
+  pivot: PIVOT_NW
+  line_break: true
+  parent: "InterScroll10"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -720.0
+    y: -3080.0
+  }
+  scale {
+    x: 4.0
+    y: 4.0
+  }
+  type: TYPE_BOX
+  texture: "ui/InterfaceIcon"
+  id: "InterScroll11"
+  parent: "results"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 24.0
+  }
+  scale {
+    x: 0.24
+    y: 0.24
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "interface"
+  font: "main"
+  id: "InterScrollName11"
+  pivot: PIVOT_W
+  parent: "InterScroll11"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    y: -20.0
+  }
+  scale {
+    x: 0.2
+    y: 0.2
+  }
+  size {
+    x: 1800.0
+    y: 200.0
+  }
+  type: TYPE_TEXT
+  font: "main"
+  id: "InterScrollText11"
+  pivot: PIVOT_NW
+  line_break: true
+  parent: "InterScroll11"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -720.0
+    y: -3380.0
+  }
+  scale {
+    x: 4.0
+    y: 4.0
+  }
+  type: TYPE_BOX
+  texture: "ui/InterfaceIcon"
+  id: "InterScroll12"
+  parent: "results"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 24.0
+  }
+  scale {
+    x: 0.24
+    y: 0.24
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "interface"
+  font: "main"
+  id: "InterScrollName12"
+  pivot: PIVOT_W
+  parent: "InterScroll12"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    y: -20.0
+  }
+  scale {
+    x: 0.2
+    y: 0.2
+  }
+  size {
+    x: 1800.0
+    y: 200.0
+  }
+  type: TYPE_TEXT
+  font: "main"
+  id: "InterScrollText12"
+  pivot: PIVOT_NW
+  line_break: true
+  parent: "InterScroll12"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 180.0
+    y: 30.0
+  }
+  scale {
+    x: 4.0
+  }
+  color {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  type: TYPE_BOX
+  texture: "ui/ResultsFrame"
+  id: "Version"
+  yanchor: YANCHOR_BOTTOM
+  pivot: PIVOT_N
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 180.0
+    y: 720.0
+  }
+  scale {
+    x: 4.0
+  }
+  color {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  type: TYPE_BOX
+  texture: "ui/ResultsFrame"
+  id: "TopFrame"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 180.0
+    y: 520.0
+  }
+  scale {
+    x: 0.9
+    y: 0.9
+  }
+  type: TYPE_BOX
+  texture: "ui/DoubleBox"
+  id: "PublicBg"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 22.0
+    y: 26.0
+  }
+  scale {
+    x: 0.3
+    y: 0.3
+  }
+  size {
+    x: 600.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "click to refresh"
+  font: "main"
+  id: "public"
+  parent: "PublicBg"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+    y: 26.0
+  }
+  type: TYPE_BOX
+  texture: "ui/WorldIcon"
+  id: "Public"
+  parent: "PublicBg"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    y: 69.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 1000.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "public ip address:"
+  font: "main"
+  id: "publichint"
+  parent: "PublicBg"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 22.0
+    y: -26.0
+  }
+  scale {
+    x: 0.2
+    y: 0.2
+  }
+  size {
+    x: 1000.0
+    y: 200.0
+  }
+  type: TYPE_TEXT
+  font: "main"
+  id: "geolocation"
+  line_break: true
+  parent: "PublicBg"
+  inherit_alpha: true
+  text_leading: 0.8
+}
+nodes {
+  position {
+    x: -100.0
+    y: -26.0
+  }
+  type: TYPE_BOX
+  texture: "ui/GeolocationIcon"
+  id: "Geolocation"
+  parent: "PublicBg"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 320.0
+    y: 640.0
+  }
+  type: TYPE_BOX
+  texture: "ui/MagnifierIcon"
+  id: "Scan"
+  xanchor: XANCHOR_RIGHT
+  yanchor: YANCHOR_TOP
+  pivot: PIVOT_NE
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 280.0
+    y: 640.0
+  }
+  type: TYPE_BOX
+  texture: "ui/EarIcon"
+  id: "Send"
+  xanchor: XANCHOR_RIGHT
+  yanchor: YANCHOR_TOP
+  pivot: PIVOT_NE
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 20.0
+    y: 620.0
+  }
+  type: TYPE_BOX
+  texture: "ui/ArrowIcon"
+  id: "Back"
+  xanchor: XANCHOR_LEFT
+  yanchor: YANCHOR_TOP
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 180.0
+    y: 440.0
+  }
+  scale {
+    x: 0.9
+    y: 0.9
+  }
+  type: TYPE_BOX
+  texture: "ui/CoupleBox"
+  id: "IpBg"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 74.0
+  }
+  scale {
+    x: 0.3
+    y: 0.3
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "255"
+  font: "main"
+  id: "ip1"
+  pivot: PIVOT_W
+  parent: "IpBg"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    y: 42.0
+  }
+  scale {
+    x: 0.24
+    y: 0.24
+  }
+  size {
+    x: 1000.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "scan ports on a specific ip"
+  font: "main"
+  id: "iphint"
+  parent: "IpBg"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+  }
+  type: TYPE_BOX
+  texture: "ui/PortsIcon"
+  id: "Ip"
+  parent: "IpBg"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 72.0
+  }
+  scale {
+    x: 0.3
+    y: 0.3
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "255.255.255."
+  font: "main"
+  id: "ip2"
+  pivot: PIVOT_E
+  parent: "IpBg"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    y: 640.0
+  }
+  type: TYPE_BOX
+  texture: "ui/IpsIcon"
+  id: "Os"
+  xanchor: XANCHOR_LEFT
+  yanchor: YANCHOR_TOP
+  pivot: PIVOT_NW
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 47.0
+  }
+  scale {
+    x: 0.24
+    y: 0.24
+  }
+  size {
+    x: 300.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "version"
+  font: "main"
+  id: "osversion"
+  pivot: PIVOT_NW
+  parent: "Os"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 47.0
+    y: -40.0
+  }
+  scale {
+    x: 0.18
+    y: 0.18
+  }
+  size {
+    x: 400.0
+    y: 100.0
+  }
+  color {
+    x: 0.922
+    y: 0.768
+    z: 0.079
+  }
+  type: TYPE_TEXT
+  text: "type"
+  font: "main"
+  id: "oshint"
+  pivot: PIVOT_SW
+  parent: "Os"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 180.0
+    y: 520.0
+  }
+  scale {
+    x: 0.9
+    y: 0.9
+  }
+  type: TYPE_BOX
+  texture: "ui/SmallCoupleBox"
+  id: "PortBg"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -20.0
+  }
+  scale {
+    x: 0.3
+    y: 0.3
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "port"
+  font: "main"
+  id: "port"
+  pivot: PIVOT_W
+  parent: "PortBg"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    y: 42.0
+  }
+  scale {
+    x: 0.24
+    y: 0.24
+  }
+  size {
+    x: 800.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "scan for ips on port:"
+  font: "main"
+  id: "porthint"
+  parent: "PortBg"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -60.0
+  }
+  type: TYPE_BOX
+  texture: "ui/IpsIcon"
+  id: "Port"
+  parent: "PortBg"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 360.0
+    y: 640.0
+  }
+  type: TYPE_BOX
+  texture: "ui/SettingsIcon"
+  id: "Settings"
+  xanchor: XANCHOR_RIGHT
+  yanchor: YANCHOR_TOP
+  pivot: PIVOT_NE
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 180.0
+    y: 110.0
+  }
+  scale {
+    x: 0.85
+    y: 0.85
+  }
+  type: TYPE_BOX
+  texture: "ui/Keyboard"
+  id: "Keyboard"
+  yanchor: YANCHOR_BOTTOM
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -180.0
+    y: 85.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter1"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -140.0
+    y: 85.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter2"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+    y: 85.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter3"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -60.0
+    y: 85.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter4"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -20.0
+    y: 85.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter5"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 20.0
+    y: 85.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter6"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 60.0
+    y: 85.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter7"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 100.0
+    y: 85.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter8"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 140.0
+    y: 85.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter9"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 180.0
+    y: 85.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter10"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -180.0
+    y: 29.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter11"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -140.0
+    y: 29.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter12"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+    y: 29.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter13"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -60.0
+    y: 29.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter14"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -20.0
+    y: 29.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter15"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 20.0
+    y: 29.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter16"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 60.0
+    y: 29.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter17"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 100.0
+    y: 29.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter18"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 140.0
+    y: 29.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter19"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 180.0
+    y: 29.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter20"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -180.0
+    y: -28.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter21"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -140.0
+    y: -28.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter22"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+    y: -28.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter23"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -60.0
+    y: -28.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter24"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -20.0
+    y: -28.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter25"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 20.0
+    y: -28.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter26"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 60.0
+    y: -28.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter27"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 100.0
+    y: -28.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter28"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 140.0
+    y: -28.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter29"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 180.0
+    y: -28.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter30"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -180.0
+    y: -84.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 226.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter31"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -140.0
+    y: -84.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 226.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter32"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+    y: -84.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 226.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter33"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -60.0
+    y: -84.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 226.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter34"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -20.0
+    y: -84.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 226.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter35"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 20.0
+    y: -84.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 226.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter36"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 60.0
+    y: -84.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 226.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter37"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 100.0
+    y: -84.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 226.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter38"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 140.0
+    y: -84.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 226.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter39"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 180.0
+    y: -84.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 226.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter40"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 180.0
+    y: 14.0
+  }
+  scale {
+    x: 0.2
+    y: 0.2
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "version"
+  font: "main"
+  id: "version"
+  yanchor: YANCHOR_BOTTOM
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 149.0
+    y: 440.0
+  }
+  scale {
+    x: 0.9
+    y: 0.9
+  }
+  type: TYPE_BOX
+  texture: "ui/SmallCoupleBox"
+  id: "ListenBg"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -20.0
+  }
+  scale {
+    x: 0.3
+    y: 0.3
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "port"
+  font: "main"
+  id: "listen"
+  pivot: PIVOT_W
+  parent: "ListenBg"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -60.0
+  }
+  type: TYPE_BOX
+  texture: "ui/EarIcon"
+  id: "Listen"
+  parent: "ListenBg"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    y: 42.0
+  }
+  scale {
+    x: 0.24
+    y: 0.24
+  }
+  size {
+    x: 600.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "listen on port:"
+  font: "main"
+  id: "listenhint"
+  parent: "ListenBg"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 265.0
+    y: 440.0
+  }
+  scale {
+    x: 0.9
+    y: 0.9
+  }
+  type: TYPE_BOX
+  texture: "ui/SquareBox"
+  id: "StartBg"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  type: TYPE_BOX
+  texture: "ui/PlayIcon"
+  id: "Start"
+  parent: "StartBg"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 340.0
+    y: 620.0
+  }
+  type: TYPE_BOX
+  texture: "ui/InterfaceIcon"
+  id: "Interface"
+  xanchor: XANCHOR_RIGHT
+  yanchor: YANCHOR_TOP
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -24.0
+  }
+  scale {
+    x: 0.2
+    y: 0.2
+  }
+  size {
+    x: 400.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "interface"
+  font: "main"
+  id: "interface"
+  pivot: PIVOT_E
+  parent: "Interface"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 180.0
+    y: 450.0
+  }
+  scale {
+    x: 0.2
+    y: 0.2
+  }
+  size {
+    x: 600.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "no interfaces to show"
+  font: "main"
+  id: "intertext"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 320.0
+    y: 110.0
+  }
+  scale {
+    x: 1.1
+    y: 1.1
+  }
+  type: TYPE_BOX
+  texture: "ui/SwitchOn"
+  id: "Torcheck"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -280.0
+    y: 20.0
+  }
+  scale {
+    x: 0.22
+    y: 0.22
+  }
+  size {
+    x: 1150.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "    refresh all tor ips on start"
+  font: "main"
+  id: "torcheck"
+  pivot: PIVOT_NW
+  parent: "Torcheck"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -280.0
+    y: -20.0
+  }
+  scale {
+    x: 0.16
+    y: 0.16
+  }
+  size {
+    x: 1200.0
+    y: 100.0
+  }
+  color {
+    x: 0.702
+    y: 0.702
+    z: 0.702
+  }
+  type: TYPE_TEXT
+  text: "downloads full ipv4 tor exit bulk list"
+  font: "main"
+  id: "torcheckhint"
+  pivot: PIVOT_SW
+  parent: "Torcheck"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -280.0
+    y: 20.0
+  }
+  scale {
+    x: 0.6
+    y: 0.6
+  }
+  type: TYPE_BOX
+  texture: "ui/TorIcon"
+  id: "TorcheckImage"
+  pivot: PIVOT_NW
+  parent: "Torcheck"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 320.0
+    y: 440.0
+  }
+  scale {
+    x: 1.1
+    y: 1.1
+  }
+  type: TYPE_BOX
+  texture: "ui/SwitchOn"
+  id: "Autocheck"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -280.0
+  }
+  scale {
+    x: 0.22
+    y: 0.22
+  }
+  size {
+    x: 1150.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "autocheck public ip on start"
+  font: "main"
+  id: "autocheck"
+  pivot: PIVOT_W
+  parent: "Autocheck"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 320.0
+    y: 390.0
+  }
+  scale {
+    x: 1.1
+    y: 1.1
+  }
+  type: TYPE_BOX
+  texture: "ui/SwitchOn"
+  id: "Particles"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -280.0
+    y: 20.0
+  }
+  scale {
+    x: 0.22
+    y: 0.22
+  }
+  size {
+    x: 1150.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "background particles"
+  font: "main"
+  id: "particles"
+  pivot: PIVOT_NW
+  parent: "Particles"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -280.0
+    y: -20.0
+  }
+  scale {
+    x: 0.16
+    y: 0.16
+  }
+  size {
+    x: 1200.0
+    y: 100.0
+  }
+  color {
+    x: 0.702
+    y: 0.702
+    z: 0.702
+  }
+  type: TYPE_TEXT
+  text: "falling clickable icons in background"
+  font: "main"
+  id: "particleshint"
+  pivot: PIVOT_SW
+  parent: "Particles"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 320.0
+    y: 490.0
+  }
+  scale {
+    x: 1.1
+    y: 1.1
+  }
+  type: TYPE_BOX
+  texture: "ui/SwitchOn"
+  id: "Sounds"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -280.0
+  }
+  scale {
+    x: 0.22
+    y: 0.22
+  }
+  size {
+    x: 1150.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "sounds effects"
+  font: "main"
+  id: "sounds"
+  pivot: PIVOT_W
+  parent: "Sounds"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 320.0
+    y: 540.0
+  }
+  scale {
+    x: 1.1
+    y: 1.1
+  }
+  type: TYPE_BOX
+  texture: "ui/SwitchOn"
+  id: "Theme"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -280.0
+  }
+  scale {
+    x: 0.22
+    y: 0.22
+  }
+  size {
+    x: 1150.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "dark theme"
+  font: "main"
+  id: "theme"
+  pivot: PIVOT_W
+  parent: "Theme"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 92.5
+    y: 410.0
+  }
+  scale {
+    x: 0.65
+    y: 0.65
+  }
+  type: TYPE_BOX
+  texture: "ui/TripleBox"
+  id: "InterBg1"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 23.0
+    y: 47.0
+  }
+  scale {
+    x: 0.32
+    y: 0.32
+  }
+  size {
+    x: 400.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "interface"
+  font: "main"
+  id: "interface1"
+  parent: "InterBg1"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+    y: 47.0
+  }
+  type: TYPE_BOX
+  texture: "ui/InterfaceIcon"
+  id: "Interface1"
+  parent: "InterBg1"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 23.0
+    y: -5.0
+  }
+  scale {
+    x: 0.3
+    y: 0.3
+  }
+  size {
+    x: 640.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "255.255.255.255"
+  font: "main"
+  id: "local1"
+  parent: "InterBg1"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+    y: -5.0
+  }
+  type: TYPE_BOX
+  texture: "ui/LocalIcon"
+  id: "Local1"
+  parent: "InterBg1"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 23.0
+    y: -47.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 700.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "00:00:00:00:00:00"
+  font: "main"
+  id: "mac1"
+  parent: "InterBg1"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+    y: -47.0
+  }
+  type: TYPE_BOX
+  texture: "ui/MacIcon"
+  id: "Mac1"
+  parent: "InterBg1"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 267.5
+    y: 410.0
+  }
+  scale {
+    x: 0.65
+    y: 0.65
+  }
+  type: TYPE_BOX
+  texture: "ui/TripleBox"
+  id: "InterBg2"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 23.0
+    y: 47.0
+  }
+  scale {
+    x: 0.32
+    y: 0.32
+  }
+  size {
+    x: 400.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "interface"
+  font: "main"
+  id: "interface2"
+  parent: "InterBg2"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+    y: 47.0
+  }
+  type: TYPE_BOX
+  texture: "ui/InterfaceIcon"
+  id: "Interface2"
+  parent: "InterBg2"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 23.0
+    y: -5.0
+  }
+  scale {
+    x: 0.3
+    y: 0.3
+  }
+  size {
+    x: 640.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "255.255.255.255"
+  font: "main"
+  id: "local2"
+  parent: "InterBg2"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+    y: -5.0
+  }
+  type: TYPE_BOX
+  texture: "ui/LocalIcon"
+  id: "Local2"
+  parent: "InterBg2"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 23.0
+    y: -47.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 700.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "00:00:00:00:00:00"
+  font: "main"
+  id: "mac2"
+  parent: "InterBg2"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+    y: -47.0
+  }
+  type: TYPE_BOX
+  texture: "ui/MacIcon"
+  id: "Mac2"
+  parent: "InterBg2"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 92.5
+    y: 300.0
+  }
+  scale {
+    x: 0.65
+    y: 0.65
+  }
+  type: TYPE_BOX
+  texture: "ui/TripleBox"
+  id: "InterBg3"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 23.0
+    y: 47.0
+  }
+  scale {
+    x: 0.32
+    y: 0.32
+  }
+  size {
+    x: 400.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "interface"
+  font: "main"
+  id: "interface3"
+  parent: "InterBg3"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+    y: 47.0
+  }
+  type: TYPE_BOX
+  texture: "ui/InterfaceIcon"
+  id: "Interface3"
+  parent: "InterBg3"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 23.0
+    y: -5.0
+  }
+  scale {
+    x: 0.3
+    y: 0.3
+  }
+  size {
+    x: 640.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "255.255.255.255"
+  font: "main"
+  id: "local3"
+  parent: "InterBg3"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+    y: -5.0
+  }
+  type: TYPE_BOX
+  texture: "ui/LocalIcon"
+  id: "Local3"
+  parent: "InterBg3"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 23.0
+    y: -47.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 700.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "00:00:00:00:00:00"
+  font: "main"
+  id: "mac3"
+  parent: "InterBg3"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+    y: -47.0
+  }
+  type: TYPE_BOX
+  texture: "ui/MacIcon"
+  id: "Mac3"
+  parent: "InterBg3"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 267.5
+    y: 300.0
+  }
+  scale {
+    x: 0.65
+    y: 0.65
+  }
+  type: TYPE_BOX
+  texture: "ui/TripleBox"
+  id: "InterBg4"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 23.0
+    y: 47.0
+  }
+  scale {
+    x: 0.32
+    y: 0.32
+  }
+  size {
+    x: 400.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "interface"
+  font: "main"
+  id: "interface4"
+  parent: "InterBg4"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+    y: 47.0
+  }
+  type: TYPE_BOX
+  texture: "ui/InterfaceIcon"
+  id: "Interface4"
+  parent: "InterBg4"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 23.0
+    y: -5.0
+  }
+  scale {
+    x: 0.3
+    y: 0.3
+  }
+  size {
+    x: 640.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "255.255.255.255"
+  font: "main"
+  id: "local4"
+  parent: "InterBg4"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+    y: -5.0
+  }
+  type: TYPE_BOX
+  texture: "ui/LocalIcon"
+  id: "Local4"
+  parent: "InterBg4"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 23.0
+    y: -47.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 700.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "00:00:00:00:00:00"
+  font: "main"
+  id: "mac4"
+  parent: "InterBg4"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+    y: -47.0
+  }
+  type: TYPE_BOX
+  texture: "ui/MacIcon"
+  id: "Mac4"
+  parent: "InterBg4"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 92.5
+    y: 190.0
+  }
+  scale {
+    x: 0.65
+    y: 0.65
+  }
+  type: TYPE_BOX
+  texture: "ui/TripleBox"
+  id: "InterBg5"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 23.0
+    y: 47.0
+  }
+  scale {
+    x: 0.32
+    y: 0.32
+  }
+  size {
+    x: 400.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "interface"
+  font: "main"
+  id: "interface5"
+  parent: "InterBg5"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+    y: 47.0
+  }
+  type: TYPE_BOX
+  texture: "ui/InterfaceIcon"
+  id: "Interface5"
+  parent: "InterBg5"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 23.0
+    y: -5.0
+  }
+  scale {
+    x: 0.3
+    y: 0.3
+  }
+  size {
+    x: 640.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "255.255.255.255"
+  font: "main"
+  id: "local5"
+  parent: "InterBg5"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+    y: -5.0
+  }
+  type: TYPE_BOX
+  texture: "ui/LocalIcon"
+  id: "Local5"
+  parent: "InterBg5"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 23.0
+    y: -47.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 700.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "00:00:00:00:00:00"
+  font: "main"
+  id: "mac5"
+  parent: "InterBg5"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+    y: -47.0
+  }
+  type: TYPE_BOX
+  texture: "ui/MacIcon"
+  id: "Mac5"
+  parent: "InterBg5"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 267.5
+    y: 190.0
+  }
+  scale {
+    x: 0.65
+    y: 0.65
+  }
+  type: TYPE_BOX
+  texture: "ui/TripleBox"
+  id: "InterBg6"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 23.0
+    y: 47.0
+  }
+  scale {
+    x: 0.32
+    y: 0.32
+  }
+  size {
+    x: 400.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "interface"
+  font: "main"
+  id: "interface6"
+  parent: "InterBg6"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+    y: 47.0
+  }
+  type: TYPE_BOX
+  texture: "ui/InterfaceIcon"
+  id: "Interface6"
+  parent: "InterBg6"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 23.0
+    y: -5.0
+  }
+  scale {
+    x: 0.3
+    y: 0.3
+  }
+  size {
+    x: 640.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "255.255.255.255"
+  font: "main"
+  id: "local6"
+  parent: "InterBg6"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+    y: -5.0
+  }
+  type: TYPE_BOX
+  texture: "ui/LocalIcon"
+  id: "Local6"
+  parent: "InterBg6"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 23.0
+    y: -47.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 700.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "00:00:00:00:00:00"
+  font: "main"
+  id: "mac6"
+  parent: "InterBg6"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+    y: -47.0
+  }
+  type: TYPE_BOX
+  texture: "ui/MacIcon"
+  id: "Mac6"
+  parent: "InterBg6"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 92.5
+    y: 80.0
+  }
+  scale {
+    x: 0.65
+    y: 0.65
+  }
+  type: TYPE_BOX
+  texture: "ui/TripleBox"
+  id: "InterBg7"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 23.0
+    y: 47.0
+  }
+  scale {
+    x: 0.32
+    y: 0.32
+  }
+  size {
+    x: 400.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "interface"
+  font: "main"
+  id: "interface7"
+  parent: "InterBg7"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+    y: 47.0
+  }
+  type: TYPE_BOX
+  texture: "ui/InterfaceIcon"
+  id: "Interface7"
+  parent: "InterBg7"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 23.0
+    y: -5.0
+  }
+  scale {
+    x: 0.3
+    y: 0.3
+  }
+  size {
+    x: 640.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "255.255.255.255"
+  font: "main"
+  id: "local7"
+  parent: "InterBg7"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+    y: -5.0
+  }
+  type: TYPE_BOX
+  texture: "ui/LocalIcon"
+  id: "Local7"
+  parent: "InterBg7"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 23.0
+    y: -47.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 700.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "00:00:00:00:00:00"
+  font: "main"
+  id: "mac7"
+  parent: "InterBg7"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+    y: -47.0
+  }
+  type: TYPE_BOX
+  texture: "ui/MacIcon"
+  id: "Mac7"
+  parent: "InterBg7"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 267.5
+    y: 80.0
+  }
+  scale {
+    x: 0.65
+    y: 0.65
+  }
+  type: TYPE_BOX
+  texture: "ui/TripleBox"
+  id: "InterBg8"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 23.0
+    y: 47.0
+  }
+  scale {
+    x: 0.32
+    y: 0.32
+  }
+  size {
+    x: 400.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "interface"
+  font: "main"
+  id: "interface8"
+  parent: "InterBg8"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+    y: 47.0
+  }
+  type: TYPE_BOX
+  texture: "ui/InterfaceIcon"
+  id: "Interface8"
+  parent: "InterBg8"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 23.0
+    y: -5.0
+  }
+  scale {
+    x: 0.3
+    y: 0.3
+  }
+  size {
+    x: 640.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "255.255.255.255"
+  font: "main"
+  id: "local8"
+  parent: "InterBg8"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+    y: -5.0
+  }
+  type: TYPE_BOX
+  texture: "ui/LocalIcon"
+  id: "Local8"
+  parent: "InterBg8"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 23.0
+    y: -47.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 700.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "00:00:00:00:00:00"
+  font: "main"
+  id: "mac8"
+  parent: "InterBg8"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+    y: -47.0
+  }
+  type: TYPE_BOX
+  texture: "ui/MacIcon"
+  id: "Mac8"
+  parent: "InterBg8"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 180.0
+    y: 300.0
+  }
+  type: TYPE_BOX
+  texture: "ui/WarnBox"
+  id: "ExitBg"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    y: 26.0
+  }
+  scale {
+    x: 0.3
+    y: 0.3
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "exit?"
+  font: "main"
+  id: "exit"
+  parent: "ExitBg"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 38.0
+    y: -26.0
+  }
+  type: TYPE_BOX
+  texture: "ui/True"
+  id: "ExitOne"
+  parent: "ExitBg"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -38.0
+    y: -26.0
+  }
+  type: TYPE_BOX
+  texture: "ui/ErrorIcon"
+  id: "ExitTwo"
+  parent: "ExitBg"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 320.0
+    y: 160.0
+  }
+  scale {
+    x: 1.1
+    y: 1.1
+  }
+  type: TYPE_BOX
+  texture: "ui/SwitchOn"
+  id: "Showmac"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -280.0
+    y: 20.0
+  }
+  scale {
+    x: 0.22
+    y: 0.22
+  }
+  size {
+    x: 1150.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "    show mac addresses"
+  font: "main"
+  id: "showmac"
+  pivot: PIVOT_NW
+  parent: "Showmac"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -280.0
+    y: -20.0
+  }
+  scale {
+    x: 0.16
+    y: 0.16
+  }
+  size {
+    x: 1200.0
+    y: 100.0
+  }
+  color {
+    x: 0.702
+    y: 0.702
+    z: 0.702
+  }
+  type: TYPE_TEXT
+  text: "will show dummy mac on android !"
+  font: "main"
+  id: "showmachint"
+  pivot: PIVOT_SW
+  parent: "Showmac"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -280.0
+    y: 20.0
+  }
+  scale {
+    x: 0.6
+    y: 0.6
+  }
+  type: TYPE_BOX
+  texture: "ui/MacIcon"
+  id: "ShowmacImage"
+  pivot: PIVOT_NW
+  parent: "Showmac"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 320.0
+    y: 210.0
+  }
+  scale {
+    x: 1.1
+    y: 1.1
+  }
+  type: TYPE_BOX
+  texture: "ui/SwitchOn"
+  id: "Geocheck"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -280.0
+    y: -20.0
+  }
+  scale {
+    x: 0.16
+    y: 0.16
+  }
+  size {
+    x: 1200.0
+    y: 100.0
+  }
+  color {
+    x: 0.702
+    y: 0.702
+    z: 0.702
+  }
+  type: TYPE_TEXT
+  text: "with each public ip check"
+  font: "main"
+  id: "geocheckhint"
+  pivot: PIVOT_SW
+  parent: "Geocheck"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -280.0
+    y: 20.0
+  }
+  scale {
+    x: 0.6
+    y: 0.6
+  }
+  type: TYPE_BOX
+  texture: "ui/GeolocationIcon"
+  id: "GeocheckImage"
+  pivot: PIVOT_NW
+  parent: "Geocheck"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -280.0
+    y: 20.0
+  }
+  scale {
+    x: 0.22
+    y: 0.22
+  }
+  size {
+    x: 1150.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "    geolocation and isp check"
+  font: "main"
+  id: "geocheck"
+  pivot: PIVOT_NW
+  parent: "Geocheck"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 320.0
+    y: 260.0
+  }
+  scale {
+    x: 1.1
+    y: 1.1
+  }
+  type: TYPE_BOX
+  texture: "ui/SwitchOn"
+  id: "Portslist"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -280.0
+    y: 20.0
+  }
+  scale {
+    x: 0.22
+    y: 0.22
+  }
+  size {
+    x: 1150.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "    scan all ports on selected ip"
+  font: "main"
+  id: "portslist"
+  pivot: PIVOT_NW
+  parent: "Portslist"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -280.0
+    y: -20.0
+  }
+  scale {
+    x: 0.16
+    y: 0.16
+  }
+  size {
+    x: 1200.0
+    y: 100.0
+  }
+  color {
+    x: 0.702
+    y: 0.702
+    z: 0.702
+  }
+  type: TYPE_TEXT
+  text: "turned off - only 100+ common ports"
+  font: "main"
+  id: "portslisthint"
+  pivot: PIVOT_SW
+  parent: "Portslist"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -280.0
+    y: 20.0
+  }
+  scale {
+    x: 0.6
+    y: 0.6
+  }
+  type: TYPE_BOX
+  texture: "ui/MagnifierIcon"
+  id: "PortslistImage"
+  pivot: PIVOT_NW
+  parent: "Portslist"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 360.0
+    y: 640.0
+  }
+  type: TYPE_BOX
+  texture: "ui/DevIcon"
+  id: "Developer"
+  xanchor: XANCHOR_RIGHT
+  yanchor: YANCHOR_TOP
+  pivot: PIVOT_NE
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 155.0
+    y: 540.0
+  }
+  scale {
+    x: 0.9
+    y: 0.9
+  }
+  color {
+    x: 0.502
+    y: 0.6
+  }
+  type: TYPE_BOX
+  texture: "ui/LongestBox"
+  id: "DevPublic"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 190.0
+  }
+  scale {
+    x: 1.1
+    y: 1.1
+  }
+  color {
+    x: 0.502
+    y: 0.6
+  }
+  type: TYPE_BOX
+  texture: "ui/RefreshIcon2"
+  id: "DevPublicReset"
+  parent: "DevPublic"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    y: 26.0
+  }
+  scale {
+    x: 0.17
+    y: 0.17
+  }
+  size {
+    x: 200.0
+    y: 80.0
+  }
+  color {
+    x: 0.502
+    y: 0.6
+  }
+  type: TYPE_TEXT
+  text: "reset"
+  font: "main"
+  id: "DevPublicResetHint"
+  parent: "DevPublicReset"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    y: 42.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 1000.0
+    y: 100.0
+  }
+  color {
+    x: 0.502
+    y: 0.6
+  }
+  type: TYPE_TEXT
+  text: "public ip address api link:"
+  font: "main"
+  id: "DevPublicHint"
+  parent: "DevPublic"
+  inherit_alpha: true
+}
+nodes {
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 1200.0
+    y: 200.0
+  }
+  type: TYPE_TEXT
+  font: "main"
+  id: "DevPublicText"
+  parent: "DevPublic"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 155.0
+    y: 460.0
+  }
+  scale {
+    x: 0.9
+    y: 0.9
+  }
+  color {
+    x: 0.6
+    y: 0.502
+    z: 0.902
+  }
+  type: TYPE_BOX
+  texture: "ui/LongestBox"
+  id: "DevTorbulk"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 190.0
+  }
+  scale {
+    x: 1.1
+    y: 1.1
+  }
+  color {
+    x: 0.6
+    y: 0.502
+    z: 0.902
+  }
+  type: TYPE_BOX
+  texture: "ui/RefreshIcon2"
+  id: "DevTorbulkReset"
+  parent: "DevTorbulk"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    y: 26.0
+  }
+  scale {
+    x: 0.17
+    y: 0.17
+  }
+  size {
+    x: 200.0
+    y: 80.0
+  }
+  color {
+    x: 0.6
+    y: 0.502
+    z: 0.902
+  }
+  type: TYPE_TEXT
+  text: "reset"
+  font: "main"
+  id: "DevTorbulkResetHint"
+  parent: "DevTorbulkReset"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    y: 42.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 1000.0
+    y: 100.0
+  }
+  color {
+    x: 0.6
+    y: 0.502
+    z: 0.902
+  }
+  type: TYPE_TEXT
+  text: "tor ip bulk exit list link:"
+  font: "main"
+  id: "DevTorbulkHint"
+  parent: "DevTorbulk"
+  inherit_alpha: true
+}
+nodes {
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 1200.0
+    y: 200.0
+  }
+  type: TYPE_TEXT
+  font: "main"
+  id: "DevTorbulkText"
+  parent: "DevTorbulk"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    y: -42.0
+  }
+  scale {
+    x: 0.2
+    y: 0.2
+  }
+  size {
+    x: 1400.0
+    y: 100.0
+  }
+  color {
+    x: 0.794
+    y: 0.049
+    z: 0.049
+  }
+  type: TYPE_TEXT
+  text: "Cotter works only with IPv4 addresses!"
+  font: "main"
+  id: "DevPublicWarn"
+  parent: "DevTorbulk"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 340.0
+    y: 580.0
+  }
+  type: TYPE_BOX
+  texture: "ui/True"
+  id: "ResultsType"
+  xanchor: XANCHOR_RIGHT
+  yanchor: YANCHOR_TOP
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 180.0
+    y: 390.0
+  }
+  size {
+    x: 1450.0
+    y: 20.0
+  }
+  color {
+    x: 0.4
+    y: 0.4
+    z: 0.4
+  }
+  type: TYPE_BOX
+  id: "ResultsBanner"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  scale {
+    x: 0.2
+    y: 0.2
+  }
+  size {
+    x: 1600.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "results"
+  font: "main"
+  id: "resultsbanner"
+  parent: "ResultsBanner"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 360.0
+    y: 600.0
+  }
+  type: TYPE_BOX
+  texture: "ui/SupportIcon"
+  id: "Support"
+  xanchor: XANCHOR_RIGHT
+  yanchor: YANCHOR_TOP
+  pivot: PIVOT_NE
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -22.0
+    y: -45.0
+  }
+  scale {
+    x: 0.14
+    y: 0.14
+  }
+  size {
+    x: 260.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "support"
+  font: "main"
+  id: "supporthint"
+  parent: "Support"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 180.0
+    y: 320.0
+  }
+  size {
+    x: 360.0
+    y: 640.0
+  }
+  color {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  type: TYPE_BOX
+  id: "blur"
+  adjust_mode: ADJUST_MODE_STRETCH
+  inherit_alpha: true
+  alpha: 0.5
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 180.0
+    y: 300.0
+  }
+  type: TYPE_BOX
+  texture: "ui/SupportBg2"
+  id: "SupportBg"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    y: 130.0
+  }
+  scale {
+    x: 0.2
+    y: 0.2
+  }
+  size {
+    x: 1000.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "monero donations address"
+  font: "main"
+  id: "supportbghint"
+  parent: "SupportBg"
+  inherit_alpha: true
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT

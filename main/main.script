@@ -1,0 +1,47 @@
+function init(self)
+	self.drop = true
+	msg.post("#sprite", "disable")
+	self.timer = 0.1
+	self.pos = go.get_position()
+	self.last_x_pos = 0
+	self.x_pos = math.random(-300, 300)
+end
+
+function update(self, dt)
+	if self.drop == true then
+		self.timer = self.timer - dt
+		if self.timer <= 0 then
+			self.timer = 0.15
+			repeat
+				self.x_pos = math.random(-20, 20) * 20
+			until self.x_pos ~= self.last_x_pos
+
+			self.last_x_pos = self.x_pos
+			factory.create("#thing", vmath.vector3(self.x_pos, self.pos.y, self.pos.z))
+		end
+	end
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("theme") then
+		if message.theme == "light" then
+			msg.post("@render:", "clear_color", { color = vmath.vector4(0.4, 0.4, 0.45, 0) } )
+			go.set("#sprite", "tint", vmath.vector4(0.4, 0.4, 0.45, 1))
+		elseif message.theme == "dark" then
+			msg.post("@render:", "clear_color", { color = vmath.vector4(0.1, 0.1, 0.1, 0) } )
+			go.set("#sprite", "tint", vmath.vector4(0.1, 0.1, 0.1, 1))
+		end
+	end
+
+	if message_id == hash("background") then
+		if message.state == true then
+			msg.post("#sprite", "disable")
+		elseif message.state == false then
+			msg.post("#sprite", "enable")
+		end
+	end
+
+	if message_id == hash("particles") then
+		self.drop = message.state
+	end
+end
