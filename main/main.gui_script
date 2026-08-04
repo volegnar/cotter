@@ -292,7 +292,8 @@ local function saved_ips(self, page)
 		end
 	end
 	for i = node_index, 4 do
-		gui.set_enabled(gui.get_node("SavedBg" .. node_index), false)
+		gui.set_text(gui.get_node("savedpublic" .. i), "")
+		gui.set_enabled(gui.get_node("SavedBg" .. i), false)
 	end
 	gui.set_text(gui.get_node("version"), "list of saved ips (page " .. self.page .. ")")
 end
@@ -507,7 +508,7 @@ local function files(self)
 	self.menu_opened = false
 	gui.set_enabled(gui.get_node("Menu"), false)
 	gui.set_scale(gui.get_node("MenuBg"), vmath.vector3(0, 0, 1))
-	gui.set_enabled(gui.get_node("results"), true)
+	gui.set_enabled(gui.get_node("results"), false)
 	gui.set_enabled(gui.get_node("Back"), true)
 	gui.set_alpha(gui.get_node("Back"), 1)
 	gui.play_flipbook(gui.get_node("Back"), "ArrowIcon")
@@ -1470,9 +1471,11 @@ if action_id == hash("touch") then
 				elseif action.released then
 					gui.set_alpha(gui.get_node("SaveDelete" .. i), 1)
 					local addr = gui.get_text(gui.get_node("savedpublic" .. i))
-					self.saved_ips[addr] = nil
-					save_files(self.saved_ips)
-					saved_ips(self, self.page)
+					if addr ~= "" then
+						self.saved_ips[addr] = nil
+						save_files(self.saved_ips)
+						saved_ips(self, self.page)
+					end
 				end
 			end
 		end
