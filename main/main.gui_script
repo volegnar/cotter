@@ -16,11 +16,11 @@ local splashes = {
 	"made in 2026", "ip enjoyers only", "what color is your ip?", 
 	"rate my ip", "freshly checked ip", "hunting for packets", 
 	"ping happens", "counting digital roommates", "very networking",
-	"It's DNS. Probably", "debugging reality", "thank your router",
-	"the bits are aligning", "be nice to your ip", "results may contain networks", 
-	"packets welcome", "stay pinged", "maximum discoverability", "keep calm and scan on",
-	"exceptionally online", "scanning responsibly", "packet approved", "born to ping",
-	"internet adjacent", "network certified", 
+	"It's DNS. Probably", "thank your router", "the bits are aligning", 
+	"be nice to your ip", "results may contain networks", "born to ping", 
+	"packets welcome", "maximum discoverability", "packet approved",
+	"exceptionally online", "scanning responsibly", "keep calm and scan on",
+	"internet adjacent", "network certified", "stay pinged", 
 }
 
 local letters = {
@@ -196,21 +196,21 @@ local function refresh_interfaces(self)
 				gui.set_enabled(mac_node, false)
 				gui.set_enabled(Mac_node, false)
 				if i == 1 then
-					gui.set_position(bg_node, vmath.vector3(92.5, 420, 0))
+					gui.set_position(bg_node, vmath.vector3(92.5, 405, 0))
 				elseif i == 2 then
-					gui.set_position(bg_node, vmath.vector3(267.5, 420, 0))
+					gui.set_position(bg_node, vmath.vector3(267.5, 405, 0))
 				elseif i == 3 then
-					gui.set_position(bg_node, vmath.vector3(92.5, 340, 0))
+					gui.set_position(bg_node, vmath.vector3(92.5, 325, 0))
 				elseif i == 4 then
-					gui.set_position(bg_node, vmath.vector3(267.5, 340, 0))
+					gui.set_position(bg_node, vmath.vector3(267.5, 325, 0))
 				elseif i == 5 then
-					gui.set_position(bg_node, vmath.vector3(92.5, 260, 0))
+					gui.set_position(bg_node, vmath.vector3(92.5, 230, 0))
 				elseif i == 6 then
-					gui.set_position(bg_node, vmath.vector3(267.5, 260, 0))
+					gui.set_position(bg_node, vmath.vector3(267.5, 230, 0))
 				elseif i == 7 then
-					gui.set_position(bg_node, vmath.vector3(92.5, 180, 0))
+					gui.set_position(bg_node, vmath.vector3(92.5, 135, 0))
 				elseif i == 8 then
-					gui.set_position(bg_node, vmath.vector3(267.5, 180, 0))
+					gui.set_position(bg_node, vmath.vector3(267.5, 135, 0))
 				end	
 			elseif self.showmac == true then
 				gui.set_position(address_node, vmath.vector3(23, -5, 0))
@@ -221,17 +221,17 @@ local function refresh_interfaces(self)
 				gui.set_enabled(mac_node, true)
 				gui.set_enabled(Mac_node, true)
 				if i == 1 then
-					gui.set_position(bg_node, vmath.vector3(92.5, 410, 0))
+					gui.set_position(bg_node, vmath.vector3(92.5, 395, 0))
 				elseif i == 2 then
-					gui.set_position(bg_node, vmath.vector3(267.5, 410, 0))
+					gui.set_position(bg_node, vmath.vector3(267.5, 395, 0))
 				elseif i == 3 then
-					gui.set_position(bg_node, vmath.vector3(92.5, 300, 0))
+					gui.set_position(bg_node, vmath.vector3(92.5, 290, 0))
 				elseif i == 4 then
-					gui.set_position(bg_node, vmath.vector3(267.5, 300, 0))
+					gui.set_position(bg_node, vmath.vector3(267.5, 290, 0))
 				elseif i == 5 then
-					gui.set_position(bg_node, vmath.vector3(92.5, 190, 0))
+					gui.set_position(bg_node, vmath.vector3(92.5, 185, 0))
 				elseif i == 6 then
-					gui.set_position(bg_node, vmath.vector3(267.5, 190, 0))
+					gui.set_position(bg_node, vmath.vector3(267.5, 185, 0))
 				elseif i == 7 then
 					gui.set_position(bg_node, vmath.vector3(92.5, 80, 0))
 				elseif i == 8 then
@@ -264,7 +264,7 @@ local function refresh_interfaces(self)
 		gui.set_enabled(gui.get_node("intertext"), false)
 	end
 end
-
+	
 local function saved_ips(self, page)
 	local start = (page - 1) * 4 + 1
 	local finish = start + 4 - 1
@@ -276,6 +276,7 @@ local function saved_ips(self, page)
 			gui.set_enabled(gui.get_node("SavedBg" .. node_index), true)
 			local addr = gui.get_node("savedpublic" .. node_index)
 			local geoisp = gui.get_node("savedgeolocation" .. node_index)
+			local hint = gui.get_node("savedhint" .. node_index)
 			if info.tor == true then
 				gui.play_flipbook(gui.get_node("SavedPublic" .. node_index), "TorIcon")
 			elseif info.tor == false then
@@ -285,6 +286,11 @@ local function saved_ips(self, page)
 				gui.play_flipbook(gui.get_node("SavedGeolocation" .. node_index), "DeadGeolocationIcon")
 			else
 				gui.play_flipbook(gui.get_node("SavedGeolocation" .. node_index), "GeolocationIcon")
+			end
+			if info.hint == nil then
+				gui.set_text(gui.get_node("savedhint" .. node_index), "no address info")
+			else
+				gui.set_text(gui.get_node("savedhint" .. node_index), info.hint)
 			end
 			gui.set_text(addr, ip)
 			gui.set_text(geoisp, info.geoisp)
@@ -306,7 +312,7 @@ local function lobby(self)
 		end
 	elseif texture == "none" then
 		gui.play_flipbook(gui.get_node("PublicBg"), "CoupleBox")
-		gui.set_position(gui.get_node("PublicBg"), vmath.vector3(180, 520, 0))
+		gui.set_position(gui.get_node("PublicBg"), vmath.vector3(180, 510, 0))
 		gui.set_position(gui.get_node("publichint"), vmath.vector3(0, 42, 0))
 		gui.set_position(gui.get_node("public"), vmath.vector3(22, 0, 0))
 		gui.set_position(gui.get_node("Public"), vmath.vector3(-100, 0, 0))
@@ -327,6 +333,7 @@ local function lobby(self)
 	gui.set_enabled(gui.get_node("ResultsType"), false)
 	gui.set_enabled(gui.get_node("ExitBg"), false)
 	gui.set_alpha(gui.get_node("blur"), 0)
+	self.to_save_ip = false
 	self.menu_opened = false
 	self.keyboard_open = false
 	self.outbox = nil
@@ -334,6 +341,7 @@ local function lobby(self)
 	for i = 1, 4 do
 		gui.set_enabled(gui.get_node("SavedBg" .. i), false)
 	end
+	gui.set_enabled(gui.get_node("Note"), false)
 	gui.set_enabled(gui.get_node("Left"), false)
 	gui.set_enabled(gui.get_node("Right"), false)
 	gui.set_scale(gui.get_node("MenuBg"), vmath.vector3(0, 0, 1))
@@ -364,11 +372,11 @@ local function lobby(self)
 	gui.set_text(gui.get_node("version"), self.sysname .. " " .. self.sysversion)
 	gui.set_text(gui.get_node("osversion"), "Cotter " .. self.store_ver)
 	math.randomseed(os.time())
-	local i = math.random(1, 25)
+	local i = math.random(1, 24)
 	gui.set_text(gui.get_node("oshint"), splashes[i])
 	msg.post("go#main", "background", {state = true})
 end
-
+	
 local function scan(self)
 	gui.animate(gui.get_node("Fader"), "color.w", 0, gui.EASING_OUTQUAD, 0.15)
 	texture = "scan"
@@ -414,6 +422,8 @@ local function scan(self)
 	self.results_type = "ok"
 	self.previously_scanned = "none"
 	gui.play_flipbook(gui.get_node("ResultsType"), "True")
+	gui.set_text(gui.get_node("resultstype"), "ok")
+	gui.set_color(gui.get_node("resultstype"), vmath.vector4(0.37, 0.65, 0.13, 1))
 	self.scrollable = false
 	self.laddress = valid[self.current_index].address
 	local name = valid[self.current_index].name
@@ -501,6 +511,10 @@ local function files(self)
 	for i = 1, 8 do
 		gui.set_enabled(gui.get_node("InterBg" .. i), false)
 		gui.set_scale(gui.get_node("InterBg" .. i), vmath.vector3(0.65, 0.65, 1))
+	end	
+	for i = 1, 4 do
+		gui.set_alpha(gui.get_node("SavedBg" .. i), 1)
+		gui.set_alpha(gui.get_node("savedhint" .. i), 0)
 	end
 	gui.set_enabled(gui.get_node("ExitBg"), false)
 	gui.set_alpha(gui.get_node("blur"), 0)
@@ -843,7 +857,7 @@ end
 
 function init(self)
 	self.store_type = "github" -- version type
-	self.store_ver = "1.2" -- version number
+	self.store_ver = "1.3" -- version number
 
 	local data = load_settings()
 	if data.autocheck == nil and data.sounds == nil 
@@ -907,14 +921,15 @@ function init(self)
 
 	if self.darktheme == false then
 		msg.post("go#main", "theme", {theme = "light"})
-		gui.set_color(gui.get_node("Version"), vmath.vector4(0.4, 0.4, 0.45, 1))
-		gui.set_color(gui.get_node("TopFrame"), vmath.vector4(0.4, 0.4, 0.45, 1))
+		gui.set_color(gui.get_node("Version"), vmath.vector4(0.9, 0.9, 0.95, 1))
+		gui.set_color(gui.get_node("TopFrame"), vmath.vector4(0.9, 0.9, 0.95, 1))
+		gui.set_color(gui.get_node("ResultsBanner"), vmath.vector4(0.6, 0.6, 0.65, 1))
 	else
 		msg.post("go#main", "theme", {theme = "dark"})
 		gui.set_color(gui.get_node("Version"), vmath.vector4(0.1, 0.1, 0.1, 1))
 		gui.set_color(gui.get_node("TopFrame"), vmath.vector4(0.1, 0.1, 0.1, 1))
+		gui.set_color(gui.get_node("ResultsBanner"), vmath.vector4(0.3, 0.3, 0.35, 1))
 	end
-	gui.set_color(gui.get_node("ResultsBanner"), vmath.vector4(0.3, 0.3, 0.35, 1))
 	msg.post("go#main", "particles", {state = self.particles})
 
 	local sysinfo = sys.get_sys_info()
@@ -941,14 +956,14 @@ function init(self)
 	777, 800, 801, 802, 803, 804, 805, 808, 6969, 8080, 8081, 8082, 8088, 8090, 8091, 8099,
 	8100, 8181, 8222, 8243, 8280, 8291, 8333, 8400, 8443, 8500, 8600, 8649, 8686, 8767,
 	8880, 8888, 8899, 9000, 9001, 9002, 9009, 9040, 9050, 9080, 9090, 9091, 9099, 9100}
-
+	
 	if self.autocheck == true then
 		self.public_check = 6
 		self.public_ready = false
 		gui.play_flipbook(gui.get_node("Public"), "Refresh")
 		gui.set_text(gui.get_node("public"), "getting public ip...")
 		gui.play_flipbook(gui.get_node("PublicBg"), "CoupleBox")
-		gui.set_position(gui.get_node("PublicBg"), vmath.vector3(180, 520, 0))
+		gui.set_position(gui.get_node("PublicBg"), vmath.vector3(180, 510, 0))
 		gui.set_position(gui.get_node("publichint"), vmath.vector3(0, 42, 0))
 		gui.set_position(gui.get_node("public"), vmath.vector3(22, 0, 0))
 		gui.set_position(gui.get_node("Public"), vmath.vector3(-100, 0, 0))
@@ -976,13 +991,13 @@ function init(self)
 				end
 				self.ip_saveable = true
 				gui.set_text(gui.get_node("saveip"), "save ip")
-				gui.set_position(gui.get_node("PublicBg"), vmath.vector3(160, 520, 0))
+				gui.set_position(gui.get_node("PublicBg"), vmath.vector3(160, 510, 0))
 				gui.set_enabled(gui.get_node("SaveIp"), true)
 				if self.geocheck == true then
 					gui.play_flipbook(gui.get_node("Geolocation"), "GeolocationIcon")
 					gui.set_text(gui.get_node("geolocation"), "getting location | isp ...")
 					gui.play_flipbook(gui.get_node("PublicBg"), "DoubleBox")
-					gui.set_position(gui.get_node("PublicBg"), vmath.vector3(180, 520, 0))
+					gui.set_position(gui.get_node("PublicBg"), vmath.vector3(180, 510, 0))
 					gui.set_position(gui.get_node("publichint"), vmath.vector3(0, 68, 0))
 					gui.set_position(gui.get_node("public"), vmath.vector3(22, 26, 0))
 					gui.set_position(gui.get_node("Public"), vmath.vector3(-100, 26, 0))
@@ -1002,7 +1017,7 @@ function init(self)
 							gui.set_text(gui.get_node("geolocation"), self.geoisp)
 							self.ip_saveable = true
 							gui.set_text(gui.get_node("saveip"), "save ip")
-							gui.set_position(gui.get_node("PublicBg"), vmath.vector3(160, 520, 0))
+							gui.set_position(gui.get_node("PublicBg"), vmath.vector3(160, 510, 0))
 							gui.set_enabled(gui.get_node("SaveIp"), true)
 						else
 							gui.play_flipbook(gui.get_node("Geolocation"), "DeadGeolocationIcon")
@@ -1248,7 +1263,7 @@ if action_id == hash("touch") then
 
 	if texture == "lobby" then
 		if self.menu_opened == false then
-			if gui.pick_node(gui.get_node("PublicBg"), action.x, action.y) then
+			if gui.pick_node(gui.get_node("PublicBg"), action.x, action.y) and self.to_save_ip == false then
 				if action.pressed then
 					gui.set_alpha(gui.get_node("PublicBg"), 0.5)
 					if self.public_ready == false then
@@ -1262,7 +1277,7 @@ if action_id == hash("touch") then
 						gui.set_text(gui.get_node("geolocation"), "")
 						gui.play_flipbook(gui.get_node("Geolocation"), "GeolocationIcon")
 						gui.play_flipbook(gui.get_node("PublicBg"), "CoupleBox")
-						gui.set_position(gui.get_node("PublicBg"), vmath.vector3(180, 520, 0))
+						gui.set_position(gui.get_node("PublicBg"), vmath.vector3(180, 510, 0))
 						gui.set_position(gui.get_node("publichint"), vmath.vector3(0, 42, 0))
 						gui.set_position(gui.get_node("public"), vmath.vector3(22, 0, 0))
 						gui.set_position(gui.get_node("Public"), vmath.vector3(-100, 0, 0))
@@ -1289,13 +1304,13 @@ if action_id == hash("touch") then
 							end
 							self.ip_saveable = true
 							gui.set_text(gui.get_node("saveip"), "save ip")
-							gui.set_position(gui.get_node("PublicBg"), vmath.vector3(160, 520, 0))
+							gui.set_position(gui.get_node("PublicBg"), vmath.vector3(160, 510, 0))
 							gui.set_enabled(gui.get_node("SaveIp"), true)
 							if self.geocheck == true then
 								gui.set_text(gui.get_node("geolocation"), "getting location | isp ...")
 								gui.play_flipbook(gui.get_node("Geolocation"), "GeolocationIcon")
 								gui.play_flipbook(gui.get_node("PublicBg"), "DoubleBox")
-								gui.set_position(gui.get_node("PublicBg"), vmath.vector3(180, 520, 0))
+								gui.set_position(gui.get_node("PublicBg"), vmath.vector3(180, 510, 0))
 								gui.set_position(gui.get_node("publichint"), vmath.vector3(0, 68, 0))
 								gui.set_position(gui.get_node("public"), vmath.vector3(22, 26, 0))
 								gui.set_position(gui.get_node("Public"), vmath.vector3(-100, 26, 0))
@@ -1314,7 +1329,7 @@ if action_id == hash("touch") then
 										gui.set_text(gui.get_node("geolocation"), self.geoisp)
 										self.ip_saveable = true
 										gui.set_text(gui.get_node("saveip"), "save ip")
-										gui.set_position(gui.get_node("PublicBg"), vmath.vector3(160, 520, 0))
+										gui.set_position(gui.get_node("PublicBg"), vmath.vector3(160, 510, 0))
 										gui.set_enabled(gui.get_node("SaveIp"), true)
 									else
 										gui.play_flipbook(gui.get_node("Geolocation"), "DeadGeolocationIcon")
@@ -1346,7 +1361,7 @@ if action_id == hash("touch") then
 
 			for i = 1, 8 do
 				local node = gui.get_node("InterBg" .. i)
-				if gui.pick_node(node, action.x, action.y) then
+				if gui.pick_node(node, action.x, action.y) and self.to_save_ip == false then
 					if action.pressed then
 						gui.animate(node, "scale", vmath.vector3(0.6, 0.6, 1), gui.EASING_OUTQUAD, 0.1)
 					elseif action.released then
@@ -1366,21 +1381,82 @@ if action_id == hash("touch") then
 				end
 			end
 
-			if self.ip_saveable == true then
+			if self.ip_saveable == true and self.to_save_ip == false and self.exit_opened == false then
 				if gui.pick_node(gui.get_node("SaveIp"), action.x, action.y) and action.pressed then
+					gui.set_text(gui.get_node("saveip"), "saving...")
 					self.ip_saveable = false
-					gui.set_text(gui.get_node("saveip"), "saved")
-					self.saved_ips[self.paddress] = {tor = self.ip_on_tor, geoisp = self.geoisp}
-					save_files(self.saved_ips)
+					self.to_save_ip = true
+					self.message = ""
+					self.keyboard_chars = string.len(self.message)
+					gui.set_enabled(gui.get_node("Keyboard"), true)
+					self.keyboard_open = true
+					self.outbox = gui.get_node("note")
+					gui.set_enabled(gui.get_node("Note"), true)
+					gui.set_text(self.outbox, "add a note...")
+					gui.set_enabled(gui.get_node("version"), false)
 				end
 			end
 
-			if gui.pick_node(gui.get_node("Menu"), action.x, action.y) then
+			if self.to_save_ip == true then
+				if self.keyboard_chars >= 0 and self.outbox ~= nil and self.keyboard_open == true then
+					for i = 1, 40 do
+						local node = gui.get_node("letter" .. i)
+						if gui.pick_node(node, action.x, action.y) and action.pressed then
+							if letters[i].output ~= "delete" then
+								if self.keyboard_chars <= 21 then
+									self.message = self.message .. letters[i].output
+									self.keyboard_chars = string.len(self.message)
+									gui.set_text(self.outbox, self.message)
+								end
+							elseif letters[i].output == "delete" and self.keyboard_chars <= 22 then
+								if self.keyboard_chars > 0 then
+									self.message = string.sub(self.message, 1, #self.message - 1)
+									self.keyboard_chars = string.len(self.message)
+									gui.set_text(self.outbox, self.message)
+								end
+							end
+						end
+					end
+				end
+
+				if gui.pick_node(gui.get_node("notesave"), action.x, action.y) and action.pressed then
+					if self.keyboard_chars == 0 then
+						self.saved_ips[self.paddress] = {tor = self.ip_on_tor, geoisp = self.geoisp}
+					else
+						self.saved_ips[self.paddress] = {tor = self.ip_on_tor, geoisp = self.geoisp, hint = self.message}
+					end
+					gui.set_text(gui.get_node("saveip"), "saved")
+					save_files(self.saved_ips)
+					self.to_save_ip = false
+					self.message = ""
+					self.keyboard_chars = string.len(self.message)
+					gui.set_enabled(gui.get_node("Keyboard"), false)
+					self.keyboard_open = false
+					self.outbox = nil
+					gui.set_enabled(gui.get_node("Note"), false)
+					gui.set_enabled(gui.get_node("version"), true)
+				end
+
+				if gui.pick_node(gui.get_node("notecancel"), action.x, action.y) and action.pressed then
+					gui.set_text(gui.get_node("saveip"), "save ip")
+					self.ip_saveable = true
+					self.to_save_ip = false
+					self.message = ""
+					self.keyboard_chars = string.len(self.message)
+					gui.set_enabled(gui.get_node("Keyboard"), false)
+					self.keyboard_open = false
+					self.outbox = nil
+					gui.set_enabled(gui.get_node("Note"), false)
+					gui.set_enabled(gui.get_node("version"), true)
+				end
+			end
+
+			if gui.pick_node(gui.get_node("Menu"), action.x, action.y) and self.to_save_ip == false then
 				if action.pressed then
 					if self.openable == true then
 						self.menu_opened = true
-						gui.animate(gui.get_node("MenuBg"), "scale", vmath.vector3(1, 1, 1), gui.EASING_OUTQUAD, 0.15)
-						gui.animate(gui.get_node("blur"), "color.w", 0.5, gui.EASING_OUTQUAD, 0.15)
+						gui.animate(gui.get_node("MenuBg"), "scale", vmath.vector3(1.2, 1.2, 1), gui.EASING_OUTQUAD, 0.15)
+						gui.animate(gui.get_node("blur"), "color.w", 0.6, gui.EASING_OUTQUAD, 0.15)
 						if self.exit_opened == true then
 							gui.set_enabled(gui.get_node("ExitBg"), false)
 							self.exit_opened = false
@@ -1476,6 +1552,16 @@ if action_id == hash("touch") then
 						save_files(self.saved_ips)
 						saved_ips(self, self.page)
 					end
+				end
+			end
+
+			if gui.pick_node(gui.get_node("SavedBg" .. i), action.x, action.y) then
+				if action.pressed then
+					gui.set_alpha(gui.get_node("SavedBg" .. i), 0.5)
+					gui.set_alpha(gui.get_node("savedhint" .. i), 2)
+				elseif action.released then
+					gui.set_alpha(gui.get_node("SavedBg" .. i), 1)
+					gui.set_alpha(gui.get_node("savedhint" .. i), 0)
 				end
 			end
 		end
@@ -1650,6 +1736,8 @@ if action_id == hash("touch") then
 				if self.results_type == "ok" then
 					self.results_type = "err"
 					gui.play_flipbook(gui.get_node("ResultsType"), "ErrorIcon")
+					gui.set_text(gui.get_node("resultstype"), "err")
+					gui.set_color(gui.get_node("resultstype"), vmath.vector4(0.66, 0.05, 0.05, 1))
 					gui.set_text(gui.get_node("results"), table.concat(self.found_errors, ", "))
 					if self.scanning == false then
 						if self.previously_scanned == "ports" or self.previously_scanned == "pauseports" then
@@ -1671,6 +1759,8 @@ if action_id == hash("touch") then
 				elseif self.results_type == "err" then
 					self.results_type = "ok"
 					gui.play_flipbook(gui.get_node("ResultsType"), "True")
+					gui.set_text(gui.get_node("resultstype"), "ok")
+					gui.set_color(gui.get_node("resultstype"), vmath.vector4(0.37, 0.65, 0.13, 1))
 					if self.scanning == false then
 						if self.previously_scanned == "ports" then
 							if #self.found_ports > 0 then
@@ -1971,12 +2061,14 @@ if action_id == hash("touch") then
 					msg.post("go#main", "theme", {theme = "dark"})
 					gui.set_color(gui.get_node("Version"), vmath.vector4(0.1, 0.1, 0.1, 1))
 					gui.set_color(gui.get_node("TopFrame"), vmath.vector4(0.1, 0.1, 0.1, 1))
+					gui.set_color(gui.get_node("ResultsBanner"), vmath.vector4(0.3, 0.3, 0.35, 1))
 				elseif self.darktheme == true then
 					gui.play_flipbook(gui.get_node("Theme"), "SwitchOff")
 					self.darktheme = false
 					msg.post("go#main", "theme", {theme = "light"})
-					gui.set_color(gui.get_node("Version"), vmath.vector4(0.4, 0.4, 0.45, 1))
-					gui.set_color(gui.get_node("TopFrame"), vmath.vector4(0.4, 0.4, 0.45, 1))
+					gui.set_color(gui.get_node("Version"), vmath.vector4(0.9, 0.9, 0.95, 1))
+					gui.set_color(gui.get_node("TopFrame"), vmath.vector4(0.9, 0.9, 0.95, 1))
+					gui.set_color(gui.get_node("ResultsBanner"), vmath.vector4(0.6, 0.6, 0.65, 1))
 				end
 				save_settings({
 					sounds = self.sounds,
@@ -2365,7 +2457,7 @@ if action_id == hash("touch") then
 				end)
 			end
 		elseif action.pressed then
-			if texture == "lobby" then
+			if texture == "lobby" and self.to_save_ip == false then
 				if self.menu_opened == false then
 					if self.exit_opened == true then
 						gui.set_enabled(gui.get_node("ExitBg"), false)
@@ -2382,7 +2474,7 @@ if action_id == hash("touch") then
 			end
 		end
 	end
-
+	
 	if action_id == hash("keyback") then
 		if action.released then
 			if texture == "developer" then
@@ -2418,7 +2510,7 @@ if action_id == hash("touch") then
 				end)
 			end
 		elseif action.pressed then
-			if texture == "lobby" then
+			if texture == "lobby" and self.to_save_ip == false then
 				if self.menu_opened == false then
 					if self.exit_opened == true then
 						gui.set_enabled(gui.get_node("ExitBg"), false)
