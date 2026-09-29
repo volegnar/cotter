@@ -867,7 +867,6 @@ nodes {
     y: 100.0
   }
   type: TYPE_TEXT
-  text: "public address"
   font: "main"
   id: "publichint"
   parent: "PublicBg"
@@ -1073,7 +1072,7 @@ nodes {
 }
 nodes {
   position {
-    x: -20.0
+    x: 20.0
   }
   scale {
     x: 0.3
@@ -1087,7 +1086,6 @@ nodes {
   text: "port"
   font: "main"
   id: "port"
-  pivot: PIVOT_W
   parent: "PortBg"
   inherit_alpha: true
 }
@@ -1148,7 +1146,7 @@ nodes {
   }
   size {
     x: 152.0
-    y: 220.0
+    y: 216.0
   }
   type: TYPE_TEXT
   text: "."
@@ -1168,7 +1166,7 @@ nodes {
   }
   size {
     x: 152.0
-    y: 220.0
+    y: 216.0
   }
   type: TYPE_TEXT
   text: "."
@@ -1188,7 +1186,7 @@ nodes {
   }
   size {
     x: 152.0
-    y: 220.0
+    y: 216.0
   }
   type: TYPE_TEXT
   text: "."
@@ -1208,7 +1206,7 @@ nodes {
   }
   size {
     x: 152.0
-    y: 220.0
+    y: 216.0
   }
   type: TYPE_TEXT
   text: "."
@@ -1228,7 +1226,7 @@ nodes {
   }
   size {
     x: 152.0
-    y: 220.0
+    y: 216.0
   }
   type: TYPE_TEXT
   text: "."
@@ -1248,7 +1246,7 @@ nodes {
   }
   size {
     x: 152.0
-    y: 220.0
+    y: 216.0
   }
   type: TYPE_TEXT
   text: "."
@@ -1268,7 +1266,7 @@ nodes {
   }
   size {
     x: 152.0
-    y: 220.0
+    y: 216.0
   }
   type: TYPE_TEXT
   text: "."
@@ -1288,7 +1286,7 @@ nodes {
   }
   size {
     x: 152.0
-    y: 220.0
+    y: 216.0
   }
   type: TYPE_TEXT
   text: "."
@@ -1308,7 +1306,7 @@ nodes {
   }
   size {
     x: 152.0
-    y: 220.0
+    y: 216.0
   }
   type: TYPE_TEXT
   text: "."
@@ -1328,7 +1326,7 @@ nodes {
   }
   size {
     x: 152.0
-    y: 220.0
+    y: 216.0
   }
   type: TYPE_TEXT
   text: "."
@@ -1339,7 +1337,7 @@ nodes {
 }
 nodes {
   position {
-    x: -180.0
+    x: -160.0
     y: 29.0
   }
   scale {
@@ -1348,7 +1346,7 @@ nodes {
   }
   size {
     x: 152.0
-    y: 220.0
+    y: 216.0
   }
   type: TYPE_TEXT
   text: "."
@@ -1359,7 +1357,7 @@ nodes {
 }
 nodes {
   position {
-    x: -140.0
+    x: -120.0
     y: 29.0
   }
   scale {
@@ -1368,7 +1366,7 @@ nodes {
   }
   size {
     x: 152.0
-    y: 220.0
+    y: 216.0
   }
   type: TYPE_TEXT
   text: "."
@@ -1379,7 +1377,7 @@ nodes {
 }
 nodes {
   position {
-    x: -100.0
+    x: -80.0
     y: 29.0
   }
   scale {
@@ -1388,7 +1386,7 @@ nodes {
   }
   size {
     x: 152.0
-    y: 220.0
+    y: 216.0
   }
   type: TYPE_TEXT
   text: "."
@@ -1399,7 +1397,7 @@ nodes {
 }
 nodes {
   position {
-    x: -60.0
+    x: -40.0
     y: 29.0
   }
   scale {
@@ -1408,7 +1406,7 @@ nodes {
   }
   size {
     x: 152.0
-    y: 220.0
+    y: 216.0
   }
   type: TYPE_TEXT
   text: "."
@@ -1419,7 +1417,6 @@ nodes {
 }
 nodes {
   position {
-    x: -20.0
     y: 29.0
   }
   scale {
@@ -1428,7 +1425,7 @@ nodes {
   }
   size {
     x: 152.0
-    y: 220.0
+    y: 216.0
   }
   type: TYPE_TEXT
   text: "."
@@ -1439,7 +1436,7 @@ nodes {
 }
 nodes {
   position {
-    x: 20.0
+    x: 40.0
     y: 29.0
   }
   scale {
@@ -1448,7 +1445,7 @@ nodes {
   }
   size {
     x: 152.0
-    y: 220.0
+    y: 216.0
   }
   type: TYPE_TEXT
   text: "."
@@ -1459,7 +1456,7 @@ nodes {
 }
 nodes {
   position {
-    x: 60.0
+    x: 80.0
     y: 29.0
   }
   scale {
@@ -1468,7 +1465,7 @@ nodes {
   }
   size {
     x: 152.0
-    y: 220.0
+    y: 216.0
   }
   type: TYPE_TEXT
   text: "."
@@ -1479,7 +1476,7 @@ nodes {
 }
 nodes {
   position {
-    x: 100.0
+    x: 120.0
     y: 29.0
   }
   scale {
@@ -1488,7 +1485,7 @@ nodes {
   }
   size {
     x: 152.0
-    y: 220.0
+    y: 216.0
   }
   type: TYPE_TEXT
   text: "."
@@ -1499,7 +1496,7 @@ nodes {
 }
 nodes {
   position {
-    x: 140.0
+    x: 160.0
     y: 29.0
   }
   scale {
@@ -1508,7 +1505,7 @@ nodes {
   }
   size {
     x: 152.0
-    y: 220.0
+    y: 216.0
   }
   type: TYPE_TEXT
   text: "."
@@ -1519,16 +1516,16 @@ nodes {
 }
 nodes {
   position {
-    x: 180.0
-    y: 29.0
+    x: -170.0
+    y: -27.0
   }
   scale {
     x: 0.25
     y: 0.25
   }
   size {
-    x: 152.0
-    y: 220.0
+    x: 232.0
+    y: 216.0
   }
   type: TYPE_TEXT
   text: "."
@@ -1539,8 +1536,8 @@ nodes {
 }
 nodes {
   position {
-    x: -180.0
-    y: -28.0
+    x: -120.0
+    y: -27.0
   }
   scale {
     x: 0.25
@@ -1548,7 +1545,7 @@ nodes {
   }
   size {
     x: 152.0
-    y: 220.0
+    y: 216.0
   }
   type: TYPE_TEXT
   text: "."
@@ -1559,8 +1556,8 @@ nodes {
 }
 nodes {
   position {
-    x: -140.0
-    y: -28.0
+    x: -80.0
+    y: -27.0
   }
   scale {
     x: 0.25
@@ -1568,7 +1565,7 @@ nodes {
   }
   size {
     x: 152.0
-    y: 220.0
+    y: 216.0
   }
   type: TYPE_TEXT
   text: "."
@@ -1579,8 +1576,8 @@ nodes {
 }
 nodes {
   position {
-    x: -100.0
-    y: -28.0
+    x: -40.0
+    y: -27.0
   }
   scale {
     x: 0.25
@@ -1588,7 +1585,7 @@ nodes {
   }
   size {
     x: 152.0
-    y: 220.0
+    y: 216.0
   }
   type: TYPE_TEXT
   text: "."
@@ -1599,8 +1596,7 @@ nodes {
 }
 nodes {
   position {
-    x: -60.0
-    y: -28.0
+    y: -27.0
   }
   scale {
     x: 0.25
@@ -1608,7 +1604,7 @@ nodes {
   }
   size {
     x: 152.0
-    y: 220.0
+    y: 216.0
   }
   type: TYPE_TEXT
   text: "."
@@ -1619,8 +1615,8 @@ nodes {
 }
 nodes {
   position {
-    x: -20.0
-    y: -28.0
+    x: 40.0
+    y: -27.0
   }
   scale {
     x: 0.25
@@ -1628,7 +1624,7 @@ nodes {
   }
   size {
     x: 152.0
-    y: 220.0
+    y: 216.0
   }
   type: TYPE_TEXT
   text: "."
@@ -1639,8 +1635,8 @@ nodes {
 }
 nodes {
   position {
-    x: 20.0
-    y: -28.0
+    x: 80.0
+    y: -27.0
   }
   scale {
     x: 0.25
@@ -1648,7 +1644,7 @@ nodes {
   }
   size {
     x: 152.0
-    y: 220.0
+    y: 216.0
   }
   type: TYPE_TEXT
   text: "."
@@ -1659,8 +1655,8 @@ nodes {
 }
 nodes {
   position {
-    x: 60.0
-    y: -28.0
+    x: 120.0
+    y: -27.0
   }
   scale {
     x: 0.25
@@ -1668,7 +1664,7 @@ nodes {
   }
   size {
     x: 152.0
-    y: 220.0
+    y: 216.0
   }
   type: TYPE_TEXT
   text: "."
@@ -1679,16 +1675,16 @@ nodes {
 }
 nodes {
   position {
-    x: 100.0
-    y: -28.0
+    x: 170.0
+    y: -27.0
   }
   scale {
     x: 0.25
     y: 0.25
   }
   size {
-    x: 152.0
-    y: 220.0
+    x: 232.0
+    y: 216.0
   }
   type: TYPE_TEXT
   text: "."
@@ -1699,15 +1695,15 @@ nodes {
 }
 nodes {
   position {
-    x: 140.0
-    y: -28.0
+    x: -150.0
+    y: -84.0
   }
   scale {
     x: 0.25
     y: 0.25
   }
   size {
-    x: 152.0
+    x: 392.0
     y: 220.0
   }
   type: TYPE_TEXT
@@ -1719,8 +1715,8 @@ nodes {
 }
 nodes {
   position {
-    x: 180.0
-    y: -28.0
+    x: -80.0
+    y: -84.0
   }
   scale {
     x: 0.25
@@ -1739,7 +1735,6 @@ nodes {
 }
 nodes {
   position {
-    x: -180.0
     y: -84.0
   }
   scale {
@@ -1747,8 +1742,8 @@ nodes {
     y: 0.25
   }
   size {
-    x: 152.0
-    y: 226.0
+    x: 472.0
+    y: 224.0
   }
   type: TYPE_TEXT
   text: "."
@@ -1759,7 +1754,7 @@ nodes {
 }
 nodes {
   position {
-    x: -140.0
+    x: 80.0
     y: -84.0
   }
   scale {
@@ -1768,7 +1763,7 @@ nodes {
   }
   size {
     x: 152.0
-    y: 226.0
+    y: 224.0
   }
   type: TYPE_TEXT
   text: "."
@@ -1779,7 +1774,7 @@ nodes {
 }
 nodes {
   position {
-    x: -100.0
+    x: 150.0
     y: -84.0
   }
   scale {
@@ -1787,153 +1782,13 @@ nodes {
     y: 0.25
   }
   size {
-    x: 152.0
-    y: 226.0
+    x: 392.0
+    y: 224.0
   }
   type: TYPE_TEXT
   text: "."
   font: "main"
   id: "letter33"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: -60.0
-    y: -84.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 226.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter34"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: -20.0
-    y: -84.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 226.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter35"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: 20.0
-    y: -84.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 226.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter36"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: 60.0
-    y: -84.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 226.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter37"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: 100.0
-    y: -84.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 226.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter38"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: 140.0
-    y: -84.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 226.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter39"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: 180.0
-    y: -84.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 226.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter40"
   parent: "Keyboard"
   inherit_alpha: true
 }
@@ -2429,8 +2284,8 @@ nodes {
     y: 395.0
   }
   scale {
-    x: 0.65
-    y: 0.65
+    x: 0.67
+    y: 0.67
   }
   type: TYPE_BOX
   texture: "ui/TripleBox"
@@ -2540,8 +2395,8 @@ nodes {
     y: 395.0
   }
   scale {
-    x: 0.65
-    y: 0.65
+    x: 0.67
+    y: 0.67
   }
   type: TYPE_BOX
   texture: "ui/TripleBox"
@@ -2651,8 +2506,8 @@ nodes {
     y: 290.0
   }
   scale {
-    x: 0.65
-    y: 0.65
+    x: 0.67
+    y: 0.67
   }
   type: TYPE_BOX
   texture: "ui/TripleBox"
@@ -2762,8 +2617,8 @@ nodes {
     y: 290.0
   }
   scale {
-    x: 0.65
-    y: 0.65
+    x: 0.67
+    y: 0.67
   }
   type: TYPE_BOX
   texture: "ui/TripleBox"
@@ -2873,8 +2728,8 @@ nodes {
     y: 185.0
   }
   scale {
-    x: 0.65
-    y: 0.65
+    x: 0.67
+    y: 0.67
   }
   type: TYPE_BOX
   texture: "ui/TripleBox"
@@ -2984,8 +2839,8 @@ nodes {
     y: 185.0
   }
   scale {
-    x: 0.65
-    y: 0.65
+    x: 0.67
+    y: 0.67
   }
   type: TYPE_BOX
   texture: "ui/TripleBox"
@@ -3091,12 +2946,12 @@ nodes {
 }
 nodes {
   position {
-    x: 92.5
+    x: 90.0
     y: 80.0
   }
   scale {
-    x: 0.65
-    y: 0.65
+    x: 0.67
+    y: 0.67
   }
   type: TYPE_BOX
   texture: "ui/TripleBox"
@@ -3202,12 +3057,12 @@ nodes {
 }
 nodes {
   position {
-    x: 267.5
+    x: 270.0
     y: 80.0
   }
   scale {
-    x: 0.65
-    y: 0.65
+    x: 0.67
+    y: 0.67
   }
   type: TYPE_BOX
   texture: "ui/TripleBox"
@@ -3619,232 +3474,6 @@ nodes {
   pivot: PIVOT_NE
   inherit_alpha: true
   size_mode: SIZE_MODE_AUTO
-}
-nodes {
-  position {
-    x: 155.0
-    y: 540.0
-  }
-  scale {
-    x: 0.9
-    y: 0.9
-  }
-  color {
-    x: 0.502
-    y: 0.6
-  }
-  type: TYPE_BOX
-  texture: "ui/LongestBox"
-  id: "DevPublic"
-  inherit_alpha: true
-  size_mode: SIZE_MODE_AUTO
-}
-nodes {
-  position {
-    x: 190.0
-  }
-  scale {
-    x: 1.1
-    y: 1.1
-  }
-  color {
-    x: 0.502
-    y: 0.6
-  }
-  type: TYPE_BOX
-  texture: "ui/RefreshIcon2"
-  id: "DevPublicReset"
-  parent: "DevPublic"
-  inherit_alpha: true
-  size_mode: SIZE_MODE_AUTO
-}
-nodes {
-  position {
-    y: 26.0
-  }
-  scale {
-    x: 0.17
-    y: 0.17
-  }
-  size {
-    x: 200.0
-    y: 80.0
-  }
-  color {
-    x: 0.502
-    y: 0.6
-  }
-  type: TYPE_TEXT
-  text: "reset"
-  font: "main"
-  id: "DevPublicResetHint"
-  parent: "DevPublicReset"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    y: 42.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 1000.0
-    y: 100.0
-  }
-  color {
-    x: 0.502
-    y: 0.6
-  }
-  type: TYPE_TEXT
-  text: "public ip address api link:"
-  font: "main"
-  id: "DevPublicHint"
-  parent: "DevPublic"
-  inherit_alpha: true
-}
-nodes {
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 1200.0
-    y: 200.0
-  }
-  type: TYPE_TEXT
-  font: "main"
-  id: "DevPublicText"
-  parent: "DevPublic"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: 155.0
-    y: 460.0
-  }
-  scale {
-    x: 0.9
-    y: 0.9
-  }
-  color {
-    x: 0.6
-    y: 0.502
-    z: 0.902
-  }
-  type: TYPE_BOX
-  texture: "ui/LongestBox"
-  id: "DevTorbulk"
-  inherit_alpha: true
-  size_mode: SIZE_MODE_AUTO
-}
-nodes {
-  position {
-    x: 190.0
-  }
-  scale {
-    x: 1.1
-    y: 1.1
-  }
-  color {
-    x: 0.6
-    y: 0.502
-    z: 0.902
-  }
-  type: TYPE_BOX
-  texture: "ui/RefreshIcon2"
-  id: "DevTorbulkReset"
-  parent: "DevTorbulk"
-  inherit_alpha: true
-  size_mode: SIZE_MODE_AUTO
-}
-nodes {
-  position {
-    y: 26.0
-  }
-  scale {
-    x: 0.17
-    y: 0.17
-  }
-  size {
-    x: 200.0
-    y: 80.0
-  }
-  color {
-    x: 0.6
-    y: 0.502
-    z: 0.902
-  }
-  type: TYPE_TEXT
-  text: "reset"
-  font: "main"
-  id: "DevTorbulkResetHint"
-  parent: "DevTorbulkReset"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    y: 42.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 1000.0
-    y: 100.0
-  }
-  color {
-    x: 0.6
-    y: 0.502
-    z: 0.902
-  }
-  type: TYPE_TEXT
-  text: "tor ip bulk exit list link:"
-  font: "main"
-  id: "DevTorbulkHint"
-  parent: "DevTorbulk"
-  inherit_alpha: true
-}
-nodes {
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 1200.0
-    y: 200.0
-  }
-  type: TYPE_TEXT
-  font: "main"
-  id: "DevTorbulkText"
-  parent: "DevTorbulk"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    y: -42.0
-  }
-  scale {
-    x: 0.2
-    y: 0.2
-  }
-  size {
-    x: 1400.0
-    y: 100.0
-  }
-  color {
-    x: 0.794
-    y: 0.049
-    z: 0.049
-  }
-  type: TYPE_TEXT
-  text: "Cotter works only with IPv4 addresses!"
-  font: "main"
-  id: "DevPublicWarn"
-  parent: "DevTorbulk"
-  inherit_alpha: true
 }
 nodes {
   position {
@@ -4277,8 +3906,8 @@ nodes {
 }
 nodes {
   position {
-    x: 160.0
-    y: 410.0
+    x: 150.0
+    y: 400.0
   }
   type: TYPE_BOX
   texture: "ui/DoubleBox"
@@ -4353,7 +3982,7 @@ nodes {
 nodes {
   position {
     x: 165.0
-    y: 5.0
+    y: 26.0
   }
   scale {
     x: 1.3
@@ -4365,25 +3994,6 @@ nodes {
   parent: "SavedBg2"
   inherit_alpha: true
   size_mode: SIZE_MODE_AUTO
-}
-nodes {
-  position {
-    y: -24.0
-  }
-  scale {
-    x: 0.15
-    y: 0.15
-  }
-  size {
-    x: 270.0
-    y: 100.0
-  }
-  type: TYPE_TEXT
-  text: "delete"
-  font: "main"
-  id: "savedelete2"
-  parent: "SaveDelete2"
-  inherit_alpha: true
 }
 nodes {
   scale {
@@ -4403,8 +4013,24 @@ nodes {
 }
 nodes {
   position {
-    x: 160.0
-    y: 290.0
+    x: 165.0
+    y: -26.0
+  }
+  scale {
+    x: 1.3
+    y: 1.3
+  }
+  type: TYPE_BOX
+  texture: "ui/PenIcon"
+  id: "SaveEdit2"
+  parent: "SavedBg2"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 150.0
+    y: 280.0
   }
   type: TYPE_BOX
   texture: "ui/DoubleBox"
@@ -4479,7 +4105,7 @@ nodes {
 nodes {
   position {
     x: 165.0
-    y: 5.0
+    y: 26.0
   }
   scale {
     x: 1.3
@@ -4491,25 +4117,6 @@ nodes {
   parent: "SavedBg3"
   inherit_alpha: true
   size_mode: SIZE_MODE_AUTO
-}
-nodes {
-  position {
-    y: -24.0
-  }
-  scale {
-    x: 0.15
-    y: 0.15
-  }
-  size {
-    x: 270.0
-    y: 100.0
-  }
-  type: TYPE_TEXT
-  text: "delete"
-  font: "main"
-  id: "savedelete3"
-  parent: "SaveDelete3"
-  inherit_alpha: true
 }
 nodes {
   scale {
@@ -4529,8 +4136,24 @@ nodes {
 }
 nodes {
   position {
-    x: 160.0
-    y: 170.0
+    x: 165.0
+    y: -26.0
+  }
+  scale {
+    x: 1.3
+    y: 1.3
+  }
+  type: TYPE_BOX
+  texture: "ui/PenIcon"
+  id: "SaveEdit3"
+  parent: "SavedBg3"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 150.0
+    y: 160.0
   }
   type: TYPE_BOX
   texture: "ui/DoubleBox"
@@ -4605,7 +4228,7 @@ nodes {
 nodes {
   position {
     x: 165.0
-    y: 5.0
+    y: 26.0
   }
   scale {
     x: 1.3
@@ -4617,25 +4240,6 @@ nodes {
   parent: "SavedBg4"
   inherit_alpha: true
   size_mode: SIZE_MODE_AUTO
-}
-nodes {
-  position {
-    y: -24.0
-  }
-  scale {
-    x: 0.15
-    y: 0.15
-  }
-  size {
-    x: 270.0
-    y: 100.0
-  }
-  type: TYPE_TEXT
-  text: "delete"
-  font: "main"
-  id: "savedelete4"
-  parent: "SaveDelete4"
-  inherit_alpha: true
 }
 nodes {
   scale {
@@ -4655,8 +4259,24 @@ nodes {
 }
 nodes {
   position {
-    x: 160.0
-    y: 530.0
+    x: 165.0
+    y: -26.0
+  }
+  scale {
+    x: 1.3
+    y: 1.3
+  }
+  type: TYPE_BOX
+  texture: "ui/PenIcon"
+  id: "SaveEdit4"
+  parent: "SavedBg4"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 150.0
+    y: 520.0
   }
   type: TYPE_BOX
   texture: "ui/DoubleBox"
@@ -4731,7 +4351,7 @@ nodes {
 nodes {
   position {
     x: 165.0
-    y: 5.0
+    y: 26.0
   }
   scale {
     x: 1.3
@@ -4743,25 +4363,6 @@ nodes {
   parent: "SavedBg1"
   inherit_alpha: true
   size_mode: SIZE_MODE_AUTO
-}
-nodes {
-  position {
-    y: -24.0
-  }
-  scale {
-    x: 0.15
-    y: 0.15
-  }
-  size {
-    x: 270.0
-    y: 100.0
-  }
-  type: TYPE_TEXT
-  text: "delete"
-  font: "main"
-  id: "savedelete1"
-  parent: "SaveDelete1"
-  inherit_alpha: true
 }
 nodes {
   scale {
@@ -4778,6 +4379,22 @@ nodes {
   line_break: true
   parent: "SavedBg1"
   inherit_alpha: true
+}
+nodes {
+  position {
+    x: 165.0
+    y: -26.0
+  }
+  scale {
+    x: 1.3
+    y: 1.3
+  }
+  type: TYPE_BOX
+  texture: "ui/PenIcon"
+  id: "SaveEdit1"
+  parent: "SavedBg1"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
 }
 nodes {
   position {
