@@ -10,7 +10,6 @@ local scan_type = "none"
 local color = vmath.vector4(1, 1, 1, 1)
 local valid = {}
 local interfaces = require("main.interfaces")
-local linuxfaces = require("main.linuxfaces")
 
 local splashes = {
 	"made in 2026", "ip enjoyers only", "what color is your ip?", 
@@ -23,17 +22,7 @@ local splashes = {
 	"internet adjacent", "network certified", "stay pinged", 
 }
 
-local letters = {
-	{ display = "1", output = "1" },
-	{ display = "2", output = "2" },
-	{ display = "3", output = "3" },
-	{ display = "4", output = "4" },
-	{ display = "5", output = "5" },
-	{ display = "6", output = "6" },
-	{ display = "7", output = "7" },
-	{ display = "8", output = "8" },
-	{ display = "9", output = "9" },
-	{ display = "0", output = "0" },
+local letters_one = {
 	{ display = "q", output = "q" },
 	{ display = "w", output = "w" },
 	{ display = "e", output = "e" },
@@ -53,7 +42,7 @@ local letters = {
 	{ display = "j", output = "j" },
 	{ display = "k", output = "k" },
 	{ display = "l", output = "l" },
-	{ display = "del", output = "delete" },
+	{ display = "^", output = "shift" },
 	{ display = "z", output = "z" },
 	{ display = "x", output = "x" },
 	{ display = "c", output = "c" },
@@ -61,9 +50,84 @@ local letters = {
 	{ display = "b", output = "b" },
 	{ display = "n", output = "n" },
 	{ display = "m", output = "m" },
-	{ display = ":", output = ":" },
+	{ display = "del", output = "delete" },
+	{ display = "123", output = "numbers" },
+	{ display = ",", output = "," },
+	{ display = "space", output = "space" },
 	{ display = ".", output = "." },
+	{ display = "enter", output = "enter" },
+}
+
+local letters_one_shift = {
+	{ display = "Q", output = "Q" },
+	{ display = "W", output = "W" },
+	{ display = "E", output = "E" },
+	{ display = "R", output = "R" },
+	{ display = "T", output = "T" },
+	{ display = "Y", output = "Y" },
+	{ display = "U", output = "U" },
+	{ display = "i", output = "I" },
+	{ display = "O", output = "O" },
+	{ display = "P", output = "P" },
+	{ display = "A", output = "A" },
+	{ display = "S", output = "S" },
+	{ display = "D", output = "D" },
+	{ display = "F", output = "F" },
+	{ display = "G", output = "G" },
+	{ display = "H", output = "H" },
+	{ display = "J", output = "J" },
+	{ display = "K", output = "K" },
+	{ display = "L", output = "L" },
+	{ display = "^^", output = "shift" },
+	{ display = "Z", output = "Z" },
+	{ display = "X", output = "X" },
+	{ display = "C", output = "C" },
+	{ display = "V", output = "V" },
+	{ display = "B", output = "B" },
+	{ display = "N", output = "N" },
+	{ display = "M", output = "M" },
+	{ display = "del", output = "delete" },
+	{ display = "123", output = "numbers" },
+	{ display = ",", output = "," },
+	{ display = "space", output = "space" },
+	{ display = ".", output = "." },
+	{ display = "enter", output = "enter" },
+}
+
+local letters_two = {
+	{ display = "1", output = "1" },
+	{ display = "2", output = "2" },
+	{ display = "3", output = "3" },
+	{ display = "4", output = "4" },
+	{ display = "5", output = "5" },
+	{ display = "6", output = "6" },
+	{ display = "7", output = "7" },
+	{ display = "8", output = "8" },
+	{ display = "9", output = "9" },
+	{ display = "0", output = "0" },
+	{ display = "@", output = "@" },
+	{ display = "#", output = "#" },
+	{ display = "$", output = "$" },
+	{ display = "~", output = "~" },
+	{ display = "*", output = "*" },
+	{ display = "-", output = "-" },
+	{ display = "+", output = "+" },
+	{ display = "(", output = "(" },
+	{ display = ")", output = ")" },
+	{ display = "?", output = "?" },
+	{ display = "!", output = "!" },
+	{ display = "<", output = "<" },
+	{ display = ">", output = ">" },
+	{ display = ":", output = ":" },
+	{ display = ";", output = ";" },
 	{ display = "/", output = "/" },
+	{ display = "=", output = "=" },
+	{ display = "del", output = "delete" },
+	{ display = "abc", output = "letters" },
+	{ display = ",", output = "," },
+	{ display = "space", output = "space" },
+	{ display = ".", output = "." },
+	{ display = "enter", output = "enter" },
 }
 
 local socket = require("socket")
@@ -196,21 +260,21 @@ local function refresh_interfaces(self)
 				gui.set_enabled(mac_node, false)
 				gui.set_enabled(Mac_node, false)
 				if i == 1 then
-					gui.set_position(bg_node, vmath.vector3(92.5, 405, 0))
+					gui.set_position(bg_node, vmath.vector3(90, 405, 0))
 				elseif i == 2 then
-					gui.set_position(bg_node, vmath.vector3(267.5, 405, 0))
+					gui.set_position(bg_node, vmath.vector3(270, 405, 0))
 				elseif i == 3 then
-					gui.set_position(bg_node, vmath.vector3(92.5, 325, 0))
+					gui.set_position(bg_node, vmath.vector3(90, 325, 0))
 				elseif i == 4 then
-					gui.set_position(bg_node, vmath.vector3(267.5, 325, 0))
+					gui.set_position(bg_node, vmath.vector3(270, 325, 0))
 				elseif i == 5 then
-					gui.set_position(bg_node, vmath.vector3(92.5, 230, 0))
+					gui.set_position(bg_node, vmath.vector3(90, 230, 0))
 				elseif i == 6 then
-					gui.set_position(bg_node, vmath.vector3(267.5, 230, 0))
+					gui.set_position(bg_node, vmath.vector3(270, 230, 0))
 				elseif i == 7 then
-					gui.set_position(bg_node, vmath.vector3(92.5, 135, 0))
+					gui.set_position(bg_node, vmath.vector3(90, 135, 0))
 				elseif i == 8 then
-					gui.set_position(bg_node, vmath.vector3(267.5, 135, 0))
+					gui.set_position(bg_node, vmath.vector3(270, 135, 0))
 				end	
 			elseif self.showmac == true then
 				gui.set_position(address_node, vmath.vector3(23, -5, 0))
@@ -221,21 +285,21 @@ local function refresh_interfaces(self)
 				gui.set_enabled(mac_node, true)
 				gui.set_enabled(Mac_node, true)
 				if i == 1 then
-					gui.set_position(bg_node, vmath.vector3(92.5, 395, 0))
+					gui.set_position(bg_node, vmath.vector3(90, 395, 0))
 				elseif i == 2 then
-					gui.set_position(bg_node, vmath.vector3(267.5, 395, 0))
+					gui.set_position(bg_node, vmath.vector3(270, 395, 0))
 				elseif i == 3 then
 					gui.set_position(bg_node, vmath.vector3(92.5, 290, 0))
 				elseif i == 4 then
-					gui.set_position(bg_node, vmath.vector3(267.5, 290, 0))
+					gui.set_position(bg_node, vmath.vector3(270, 290, 0))
 				elseif i == 5 then
-					gui.set_position(bg_node, vmath.vector3(92.5, 185, 0))
+					gui.set_position(bg_node, vmath.vector3(90, 185, 0))
 				elseif i == 6 then
-					gui.set_position(bg_node, vmath.vector3(267.5, 185, 0))
+					gui.set_position(bg_node, vmath.vector3(270, 185, 0))
 				elseif i == 7 then
-					gui.set_position(bg_node, vmath.vector3(92.5, 80, 0))
+					gui.set_position(bg_node, vmath.vector3(90, 80, 0))
 				elseif i == 8 then
-					gui.set_position(bg_node, vmath.vector3(267.5, 80, 0))
+					gui.set_position(bg_node, vmath.vector3(270, 80, 0))
 				end
 			end
 			local category = find_color(self, iface.name)
@@ -264,7 +328,7 @@ local function refresh_interfaces(self)
 		gui.set_enabled(gui.get_node("intertext"), false)
 	end
 end
-	
+
 local function saved_ips(self, page)
 	local start = (page - 1) * 4 + 1
 	local finish = start + 4 - 1
@@ -328,7 +392,7 @@ local function lobby(self)
 	gui.set_enabled(gui.get_node("PortBg"), false)
 	gui.set_enabled(gui.get_node("IpBg"), false)
 	gui.set_enabled(gui.get_node("results"), false)
-	gui.set_enabled(gui.get_node("Keyboard"), false)
+	gui.set_scale(gui.get_node("Keyboard"), vmath.vector3(0, 0, 1))
 	gui.set_enabled(gui.get_node("Interface"), false)
 	gui.set_enabled(gui.get_node("ResultsType"), false)
 	gui.set_enabled(gui.get_node("ExitBg"), false)
@@ -336,7 +400,11 @@ local function lobby(self)
 	self.to_save_ip = false
 	self.menu_opened = false
 	self.keyboard_open = false
-	self.outbox = nil
+	self.keyboard_page = 1
+	self.shift = 1
+	for i = 1, 33 do
+		gui.set_text(gui.get_node("letter" .. i), letters_one[i].display)
+	end
 	self.exit_opened = false
 	for i = 1, 4 do
 		gui.set_enabled(gui.get_node("SavedBg" .. i), false)
@@ -357,8 +425,6 @@ local function lobby(self)
 	gui.set_enabled(gui.get_node("Geocheck"), false)
 	gui.set_enabled(gui.get_node("Portslist"), false)
 	gui.set_enabled(gui.get_node("Developer"), false)
-	gui.set_enabled(gui.get_node("DevPublic"), false)
-	gui.set_enabled(gui.get_node("DevTorbulk"), false)
 	for i = 1, 12 do
 		gui.set_enabled(gui.get_node("InterScroll" .. i), false)
 	end
@@ -376,7 +442,7 @@ local function lobby(self)
 	gui.set_text(gui.get_node("oshint"), splashes[i])
 	msg.post("go#main", "background", {state = true})
 end
-	
+
 local function scan(self)
 	gui.animate(gui.get_node("Fader"), "color.w", 0, gui.EASING_OUTQUAD, 0.15)
 	texture = "scan"
@@ -385,7 +451,7 @@ local function scan(self)
 	gui.set_enabled(gui.get_node("PublicBg"), false)
 	for i = 1, 8 do
 		gui.set_enabled(gui.get_node("InterBg" .. i), false)
-		gui.set_scale(gui.get_node("InterBg" .. i), vmath.vector3(0.65, 0.65, 1))
+		gui.set_scale(gui.get_node("InterBg" .. i), vmath.vector3(0.67, 0.67, 1))
 	end
 	gui.set_enabled(gui.get_node("Interface"), true)
 	gui.set_enabled(gui.get_node("ResultsType"), true)
@@ -393,6 +459,11 @@ local function scan(self)
 	gui.set_alpha(gui.get_node("blur"), 0)
 	self.menu_opened = false
 	self.exit_opened = false
+	self.keyboard_page = 1
+	self.shift = 1
+	for i = 1, 33 do
+		gui.set_text(gui.get_node("letter" .. i), letters_one[i].display)
+	end
 	gui.set_enabled(gui.get_node("Menu"), false)
 	gui.set_scale(gui.get_node("MenuBg"), vmath.vector3(0, 0, 1))
 	gui.set_enabled(gui.get_node("PortBg"), true)
@@ -427,12 +498,10 @@ local function scan(self)
 	self.scrollable = false
 	self.laddress = valid[self.current_index].address
 	local name = valid[self.current_index].name
-	local volor = vmath.vector4(1, 1, 1, 1)
+	local volor = vmath.vector4(0.96, 0.86, 0.70, 1)
 	local category = find_color(self, name)
 	if category then
 		volor = category.color
-	else
-		volor = vmath.vector4(0.96, 0.86, 0.70, 1)
 	end
 	gui.set_color(gui.get_node("Interface"), volor)
 	gui.set_color(gui.get_node("interface"), volor)
@@ -462,12 +531,17 @@ local function send(self)
 	gui.set_enabled(gui.get_node("PublicBg"), false)
 	for i = 1, 8 do
 		gui.set_enabled(gui.get_node("InterBg" .. i), false)
-		gui.set_scale(gui.get_node("InterBg" .. i), vmath.vector3(0.65, 0.65, 1))
+		gui.set_scale(gui.get_node("InterBg" .. i), vmath.vector3(0.67, 0.67, 1))
 	end
 	gui.set_enabled(gui.get_node("ExitBg"), false)
 	gui.set_alpha(gui.get_node("blur"), 0)
 	self.exit_opened = false
 	self.menu_opened = false
+	self.keyboard_page = 1
+	self.shift = 1
+	for i = 1, 33 do
+		gui.set_text(gui.get_node("letter" .. i), letters_one[i].display)
+	end
 	gui.set_enabled(gui.get_node("Menu"), false)
 	gui.set_scale(gui.get_node("MenuBg"), vmath.vector3(0, 0, 1))
 	gui.set_enabled(gui.get_node("results"), true)
@@ -510,14 +584,22 @@ local function files(self)
 	gui.set_enabled(gui.get_node("PublicBg"), false)
 	for i = 1, 8 do
 		gui.set_enabled(gui.get_node("InterBg" .. i), false)
-		gui.set_scale(gui.get_node("InterBg" .. i), vmath.vector3(0.65, 0.65, 1))
-	end	
+		gui.set_scale(gui.get_node("InterBg" .. i), vmath.vector3(0.67, 0.67, 1))
+	end
 	for i = 1, 4 do
 		gui.set_alpha(gui.get_node("SavedBg" .. i), 1)
 		gui.set_alpha(gui.get_node("savedhint" .. i), 0)
 	end
+	self.files_addr = ""
 	gui.set_enabled(gui.get_node("ExitBg"), false)
 	gui.set_alpha(gui.get_node("blur"), 0)
+	gui.set_scale(gui.get_node("Keyboard"), vmath.vector3(0, 0, 1))
+	self.keyboard_open = false
+	self.keyboard_page = 1
+	self.shift = 1
+	for i = 1, 33 do
+		gui.set_text(gui.get_node("letter" .. i), letters_one[i].display)
+	end
 	self.exit_opened = false
 	self.menu_opened = false
 	gui.set_enabled(gui.get_node("Menu"), false)
@@ -544,7 +626,7 @@ local function settings(self)
 	gui.set_enabled(gui.get_node("Os"), false)
 	for i = 1, 8 do
 		gui.set_enabled(gui.get_node("InterBg" .. i), false)
-		gui.set_scale(gui.get_node("InterBg" .. i), vmath.vector3(0.65, 0.65, 1))
+		gui.set_scale(gui.get_node("InterBg" .. i), vmath.vector3(0.67, 0.67, 1))
 	end
 	gui.set_enabled(gui.get_node("PublicBg"), false)
 	gui.set_enabled(gui.get_node("ExitBg"), false)
@@ -558,7 +640,7 @@ local function settings(self)
 	gui.play_flipbook(gui.get_node("Back"), "ArrowIcon")
 	gui.set_alpha(gui.get_node("Back"), 1)
 	gui.set_alpha(gui.get_node("Developer"), 1)
-	gui.set_enabled(gui.get_node("Keyboard"), false)
+	gui.set_scale(gui.get_node("Keyboard"), vmath.vector3(0, 0, 1))
 	gui.set_enabled(gui.get_node("Sounds"), true)
 	gui.set_enabled(gui.get_node("Autocheck"), true)
 	gui.set_enabled(gui.get_node("Theme"), true)
@@ -570,8 +652,6 @@ local function settings(self)
 	gui.set_enabled(gui.get_node("Version"), false)
 	gui.set_enabled(gui.get_node("TopFrame"), false)
 	gui.set_enabled(gui.get_node("intertext"), false)
-	gui.set_enabled(gui.get_node("DevPublic"), false)
-	gui.set_enabled(gui.get_node("DevTorbulk"), false)
 	gui.set_enabled(gui.get_node("results"), false)
 	gui.set_enabled(gui.get_node("ResultsBanner"), false)
 	self.scrollable = false
@@ -635,35 +715,7 @@ end
 local function developer(self)
 	gui.animate(gui.get_node("Fader"), "color.w", 0, gui.EASING_OUTQUAD, 0.15)
 	texture = "developer"
-	gui.set_enabled(gui.get_node("DevPublic"), true)
-	gui.set_enabled(gui.get_node("DevTorbulk"), true)
-	local devpublic = self.devpublic
-	if #devpublic > 28 then
-		devpublic = devpublic:sub(1, 28) .. "\n" .. devpublic:sub(29)
-	end
-	gui.set_text(gui.get_node("DevPublicText"), devpublic)
-	local devtorbulk = self.devtorbulk
-	if #devtorbulk > 28 then
-		devtorbulk = devtorbulk:sub(1, 28) .. "\n" .. devtorbulk:sub(29)
-	end
-	gui.set_text(gui.get_node("DevTorbulkText"), devtorbulk)
-	if self.devpublic == "https://api4.ipify.org" then
-		gui.set_enabled(gui.get_node("DevPublicReset"), false)
-		gui.set_position(gui.get_node("DevPublic"), vmath.vector3(180, 540, 0))
-	else
-		gui.set_enabled(gui.get_node("DevPublicReset"), true)
-		gui.set_position(gui.get_node("DevPublic"), vmath.vector3(155, 540, 0))
-	end
-	if self.devtorbulk == "https://check.torproject.org/torbulkexitlist" then
-		gui.set_enabled(gui.get_node("DevTorbulkReset"), false)
-		gui.set_position(gui.get_node("DevTorbulk"), vmath.vector3(180, 460, 0))
-	else
-		gui.set_enabled(gui.get_node("DevTorbulkReset"), true)
-		gui.set_position(gui.get_node("DevTorbulk"), vmath.vector3(155, 460, 0))
-	end
-	gui.animate(gui.get_node("DevTorbulk"), "scale", vmath.vector3(0.9, 0.9, 1), gui.EASING_OUTQUAD, 0.1)
-	gui.animate(gui.get_node("DevPublic"), "scale", vmath.vector3(0.9, 0.9, 1), gui.EASING_OUTQUAD, 0.1)
-	gui.set_enabled(gui.get_node("Keyboard"), false)
+	gui.set_scale(gui.get_node("Keyboard"), vmath.vector3(0, 0, 1))
 	self.keyboard_open = false
 	self.outbox = nil
 	gui.set_enabled(gui.get_node("version"), true)
@@ -857,7 +909,7 @@ end
 
 function init(self)
 	self.store_type = "github" -- version type
-	self.store_ver = "1.3" -- version number
+	self.store_ver = "1.3.1" -- version number
 
 	local data = load_settings()
 	if data.autocheck == nil and data.sounds == nil 
@@ -926,8 +978,8 @@ function init(self)
 		gui.set_color(gui.get_node("ResultsBanner"), vmath.vector4(0.6, 0.6, 0.65, 1))
 	else
 		msg.post("go#main", "theme", {theme = "dark"})
-		gui.set_color(gui.get_node("Version"), vmath.vector4(0.1, 0.1, 0.1, 1))
-		gui.set_color(gui.get_node("TopFrame"), vmath.vector4(0.1, 0.1, 0.1, 1))
+		gui.set_color(gui.get_node("Version"), vmath.vector4(0.1, 0.1, 0.11, 1))
+		gui.set_color(gui.get_node("TopFrame"), vmath.vector4(0.1, 0.1, 0.11, 1))
 		gui.set_color(gui.get_node("ResultsBanner"), vmath.vector4(0.3, 0.3, 0.35, 1))
 	end
 	msg.post("go#main", "particles", {state = self.particles})
@@ -1067,13 +1119,9 @@ function init(self)
 
 	self.message = ""
 	self.keyboard_chars = string.len(self.message)
-	gui.set_enabled(gui.get_node("Keyboard"), false)
+	gui.set_scale(gui.get_node("Keyboard"), vmath.vector3(0, 0, 1))
 	self.keyboard_open = false
 	self.outbox = nil
-	for i = 1, 40 do
-		local node = gui.get_node("letter" .. i)
-		gui.set_text(node, letters[i].display)
-	end
 	msg.post(".", "acquire_input_focus")
 
 	gui.animate(gui.get_node("oshint"), "scale", vmath.vector3(0.175, 0.175, 1), gui.EASING_OUTSINE, 
@@ -1363,9 +1411,9 @@ if action_id == hash("touch") then
 				local node = gui.get_node("InterBg" .. i)
 				if gui.pick_node(node, action.x, action.y) and self.to_save_ip == false then
 					if action.pressed then
-						gui.animate(node, "scale", vmath.vector3(0.6, 0.6, 1), gui.EASING_OUTQUAD, 0.1)
+						gui.animate(node, "scale", vmath.vector3(0.62, 0.62, 1), gui.EASING_OUTQUAD, 0.1)
 					elseif action.released then
-						gui.animate(node, "scale", vmath.vector3(0.65, 0.65, 1), gui.EASING_OUTQUAD, 0.1)
+						gui.animate(node, "scale", vmath.vector3(0.67, 0.67, 1), gui.EASING_OUTQUAD, 0.1)
 					end
 				end
 			end
@@ -1380,7 +1428,7 @@ if action_id == hash("touch") then
 					sys.exit(0)
 				end
 			end
-
+	
 			if self.ip_saveable == true and self.to_save_ip == false and self.exit_opened == false then
 				if gui.pick_node(gui.get_node("SaveIp"), action.x, action.y) and action.pressed then
 					gui.set_text(gui.get_node("saveip"), "saving...")
@@ -1388,7 +1436,7 @@ if action_id == hash("touch") then
 					self.to_save_ip = true
 					self.message = ""
 					self.keyboard_chars = string.len(self.message)
-					gui.set_enabled(gui.get_node("Keyboard"), true)
+					gui.animate(gui.get_node("Keyboard"), "scale", vmath.vector3(0.85, 0.85, 1), gui.EASING_OUTSINE, 0.1)
 					self.keyboard_open = true
 					self.outbox = gui.get_node("note")
 					gui.set_enabled(gui.get_node("Note"), true)
@@ -1398,27 +1446,6 @@ if action_id == hash("touch") then
 			end
 
 			if self.to_save_ip == true then
-				if self.keyboard_chars >= 0 and self.outbox ~= nil and self.keyboard_open == true then
-					for i = 1, 40 do
-						local node = gui.get_node("letter" .. i)
-						if gui.pick_node(node, action.x, action.y) and action.pressed then
-							if letters[i].output ~= "delete" then
-								if self.keyboard_chars <= 21 then
-									self.message = self.message .. letters[i].output
-									self.keyboard_chars = string.len(self.message)
-									gui.set_text(self.outbox, self.message)
-								end
-							elseif letters[i].output == "delete" and self.keyboard_chars <= 22 then
-								if self.keyboard_chars > 0 then
-									self.message = string.sub(self.message, 1, #self.message - 1)
-									self.keyboard_chars = string.len(self.message)
-									gui.set_text(self.outbox, self.message)
-								end
-							end
-						end
-					end
-				end
-
 				if gui.pick_node(gui.get_node("notesave"), action.x, action.y) and action.pressed then
 					if self.keyboard_chars == 0 then
 						self.saved_ips[self.paddress] = {tor = self.ip_on_tor, geoisp = self.geoisp}
@@ -1430,7 +1457,7 @@ if action_id == hash("touch") then
 					self.to_save_ip = false
 					self.message = ""
 					self.keyboard_chars = string.len(self.message)
-					gui.set_enabled(gui.get_node("Keyboard"), false)
+					gui.animate(gui.get_node("Keyboard"), "scale", vmath.vector3(0, 0, 1), gui.EASING_OUTSINE, 0.1)
 					self.keyboard_open = false
 					self.outbox = nil
 					gui.set_enabled(gui.get_node("Note"), false)
@@ -1443,7 +1470,7 @@ if action_id == hash("touch") then
 					self.to_save_ip = false
 					self.message = ""
 					self.keyboard_chars = string.len(self.message)
-					gui.set_enabled(gui.get_node("Keyboard"), false)
+					gui.animate(gui.get_node("Keyboard"), "scale", vmath.vector3(0, 0, 1), gui.EASING_OUTSINE, 0.1)
 					self.keyboard_open = false
 					self.outbox = nil
 					gui.set_enabled(gui.get_node("Note"), false)
@@ -1451,22 +1478,18 @@ if action_id == hash("touch") then
 				end
 			end
 
-			if gui.pick_node(gui.get_node("Menu"), action.x, action.y) and self.to_save_ip == false then
-				if action.pressed then
-					if self.openable == true then
-						self.menu_opened = true
-						gui.animate(gui.get_node("MenuBg"), "scale", vmath.vector3(1.2, 1.2, 1), gui.EASING_OUTQUAD, 0.15)
-						gui.animate(gui.get_node("blur"), "color.w", 0.6, gui.EASING_OUTQUAD, 0.15)
-						if self.exit_opened == true then
-							gui.set_enabled(gui.get_node("ExitBg"), false)
-							self.exit_opened = false
-						end
-					end
+			if gui.pick_node(gui.get_node("Menu"), action.x, action.y) and self.to_save_ip == false and action.pressed then
+				self.menu_opened = true
+				gui.animate(gui.get_node("MenuBg"), "scale", vmath.vector3(1.2, 1.2, 1), gui.EASING_OUTQUAD, 0.15)
+				gui.animate(gui.get_node("blur"), "color.w", 0.6, gui.EASING_OUTQUAD, 0.15)
+				if self.exit_opened == true then
+					gui.set_enabled(gui.get_node("ExitBg"), false)
+					self.exit_opened = false
 				end
 			end
 		elseif self.menu_opened == true then
 
-			if gui.pick_node(gui.get_node("Scan"), action.x, action.y) and action.pressed then
+			if gui.pick_node(gui.get_node("Scan"), action.x, action.y) and action.pressed and self.openable then
 				gui.animate(gui.get_node("Fader"), "color.w", 1, gui.EASING_OUTQUAD, 0.15)
 				timer.delay(0.15, false, function() 
 					scan(self)
@@ -1480,7 +1503,7 @@ if action_id == hash("touch") then
 				end)
 			end
 
-			if gui.pick_node(gui.get_node("Send"), action.x, action.y) and action.pressed then
+			if gui.pick_node(gui.get_node("Send"), action.x, action.y) and action.pressed and self.openable then
 				gui.animate(gui.get_node("Fader"), "color.w", 1, gui.EASING_OUTQUAD, 0.15)
 				timer.delay(0.15, false, function() 
 					send(self)
@@ -1518,7 +1541,7 @@ if action_id == hash("touch") then
 			end
 		end
 
-		if gui.pick_node(gui.get_node("Left"), action.x, action.y) then
+		if gui.pick_node(gui.get_node("Left"), action.x, action.y) and self.to_save_ip == false then
 			if action.pressed then
 				gui.set_alpha(gui.get_node("Left"), 0.5)
 			elseif action.released then
@@ -1530,7 +1553,7 @@ if action_id == hash("touch") then
 			end
 		end
 
-		if gui.pick_node(gui.get_node("Right"), action.x, action.y) then
+		if gui.pick_node(gui.get_node("Right"), action.x, action.y)  and self.to_save_ip == false then
 			if action.pressed then
 				gui.set_alpha(gui.get_node("Right"), 0.5)
 			elseif action.released then
@@ -1540,8 +1563,35 @@ if action_id == hash("touch") then
 			end
 		end
 
+		if self.to_save_ip == true then
+			if gui.pick_node(gui.get_node("notesave"), action.x, action.y) and action.pressed then
+				self.saved_ips[self.files_addr].hint = self.message
+				save_files(self.saved_ips)
+				self.to_save_ip = false
+				self.message = ""
+				self.keyboard_chars = string.len(self.message)
+				gui.animate(gui.get_node("Keyboard"), "scale", vmath.vector3(0, 0, 1), gui.EASING_OUTSINE, 0.1)
+				self.keyboard_open = false
+				self.outbox = nil
+				gui.set_enabled(gui.get_node("Note"), false)
+				gui.set_enabled(gui.get_node("version"), true)
+				saved_ips(self, self.page)
+			end
+
+			if gui.pick_node(gui.get_node("notecancel"), action.x, action.y) and action.pressed then
+				self.to_save_ip = false
+				self.message = ""
+				self.keyboard_chars = string.len(self.message)
+				gui.animate(gui.get_node("Keyboard"), "scale", vmath.vector3(0, 0, 1), gui.EASING_OUTSINE, 0.1)
+				self.keyboard_open = false
+				self.outbox = nil
+				gui.set_enabled(gui.get_node("Note"), false)
+				gui.set_enabled(gui.get_node("version"), true)
+			end
+		end
+
 		for i = 1, 4 do
-			if gui.pick_node(gui.get_node("SaveDelete" .. i), action.x, action.y) then
+			if gui.pick_node(gui.get_node("SaveDelete" .. i), action.x, action.y) and self.to_save_ip == false then
 				if action.pressed then
 					gui.set_alpha(gui.get_node("SaveDelete" .. i), 0.5)
 				elseif action.released then
@@ -1555,7 +1605,31 @@ if action_id == hash("touch") then
 				end
 			end
 
-			if gui.pick_node(gui.get_node("SavedBg" .. i), action.x, action.y) then
+			if gui.pick_node(gui.get_node("SaveEdit" .. i), action.x, action.y) and self.to_save_ip == false then
+				if action.pressed then
+					gui.set_alpha(gui.get_node("SaveEdit" .. i), 0.5)
+				elseif action.released then
+					gui.set_alpha(gui.get_node("SaveEdit" .. i), 1)
+					self.files_addr = gui.get_text(gui.get_node("savedpublic" .. i))
+					if self.files_addr ~= "" then
+						self.to_save_ip = true
+						local a = self.saved_ips[self.files_addr].hint
+						if a == nil then
+							a = ""
+						end
+						self.message = a
+						self.keyboard_chars = string.len(self.message)
+						gui.animate(gui.get_node("Keyboard"), "scale", vmath.vector3(0.85, 0.85, 1), gui.EASING_OUTSINE, 0.1)
+						self.keyboard_open = true
+						self.outbox = gui.get_node("note")
+						gui.set_enabled(gui.get_node("Note"), true)
+						gui.set_text(self.outbox, self.message)
+						gui.set_enabled(gui.get_node("version"), false)
+					end
+				end
+			end
+
+			if gui.pick_node(gui.get_node("SavedBg" .. i), action.x, action.y) and self.to_save_ip == false then
 				if action.pressed then
 					gui.set_alpha(gui.get_node("SavedBg" .. i), 0.5)
 					gui.set_alpha(gui.get_node("savedhint" .. i), 2)
@@ -1567,48 +1641,6 @@ if action_id == hash("touch") then
 		end
 
 	elseif texture == "scan" then
-		if self.keyboard_chars >= 0 and self.outbox ~= nil and self.keyboard_open == true then
-			for i = 1, 40 do
-				local node = gui.get_node("letter" .. i)
-				if gui.pick_node(node, action.x, action.y) and action.pressed then
-					if self.outbox == gui.get_node("port") then
-						if letters[i].output == "1" or letters[i].output == "2" or letters[i].output == "3" 
-						or letters[i].output == "4" or letters[i].output == "5" or letters[i].output == "6"
-						or letters[i].output == "7" or letters[i].output == "8" or letters[i].output == "9"
-						or letters[i].output == "0" then
-							if self.keyboard_chars <= 4 then
-								self.message = self.message .. letters[i].output
-								self.keyboard_chars = string.len(self.message)
-								gui.set_text(self.outbox, self.message)
-							end
-						elseif letters[i].output == "delete" and self.keyboard_chars <= 5 then
-							if self.keyboard_chars > 0 then
-								self.message = string.sub(self.message, 1, #self.message - 1)
-								self.keyboard_chars = string.len(self.message)
-								gui.set_text(self.outbox, self.message)
-							end
-						end
-					elseif self.outbox == gui.get_node("ip1") then
-						if letters[i].output == "1" or letters[i].output == "2" or letters[i].output == "3" 
-						or letters[i].output == "4" or letters[i].output == "5" or letters[i].output == "6"
-						or letters[i].output == "7" or letters[i].output == "8" or letters[i].output == "9"
-						or letters[i].output == "0" then
-							if self.keyboard_chars <= 2 then
-								self.message = self.message .. letters[i].output
-								self.keyboard_chars = string.len(self.message)
-								gui.set_text(self.outbox, self.message)
-							end
-						elseif letters[i].output == "delete" and self.keyboard_chars <= 3 then
-							if self.keyboard_chars > 0 then
-								self.message = string.sub(self.message, 1, #self.message - 1)
-								self.keyboard_chars = string.len(self.message)
-								gui.set_text(self.outbox, self.message)
-							end
-						end
-					end
-				end
-			end
-		end
 
 		if gui.pick_node(gui.get_node("PortBg"), action.x, action.y) and self.scanning == false then
 			if action.pressed then
@@ -1631,7 +1663,7 @@ if action_id == hash("touch") then
 				if self.keyboard_open == false then
 					self.message = ""
 					self.keyboard_chars = string.len(self.message)
-					gui.set_enabled(gui.get_node("Keyboard"), true)
+					gui.animate(gui.get_node("Keyboard"), "scale", vmath.vector3(0.85, 0.85, 1), gui.EASING_OUTSINE, 0.1)
 					self.keyboard_open = true
 					gui.set_enabled(gui.get_node("version"), false)
 				elseif self.keyboard_open == true and self.message ~= "" then
@@ -1653,7 +1685,7 @@ if action_id == hash("touch") then
 						gui.set_text(gui.get_node("porthint"), "scanning on port:")
 						self.message = ""
 						self.keyboard_chars = string.len(self.message)
-						gui.set_enabled(gui.get_node("Keyboard"), false)
+						gui.animate(gui.get_node("Keyboard"), "scale", vmath.vector3(0, 0, 1), gui.EASING_OUTSINE, 0.1)
 						self.keyboard_open = false
 						self.outbox = nil
 						gui.set_enabled(gui.get_node("version"), true)
@@ -1688,7 +1720,7 @@ if action_id == hash("touch") then
 				if self.keyboard_open == false then
 					self.message = ""
 					self.keyboard_chars = string.len(self.message)
-					gui.set_enabled(gui.get_node("Keyboard"), true)
+					gui.animate(gui.get_node("Keyboard"), "scale", vmath.vector3(0.85, 0.85, 1), gui.EASING_OUTSINE, 0.1)
 					self.keyboard_open = true
 					gui.set_enabled(gui.get_node("version"), false)
 				elseif self.keyboard_open == true and self.message ~= "" then
@@ -1713,7 +1745,7 @@ if action_id == hash("touch") then
 						gui.play_flipbook(gui.get_node("Ip"), "PortsIcon")
 						self.message = ""
 						self.keyboard_chars = string.len(self.message)
-						gui.set_enabled(gui.get_node("Keyboard"), false)
+						gui.animate(gui.get_node("Keyboard"), "scale", vmath.vector3(0, 0, 1), gui.EASING_OUTSINE, 0.1)
 						self.keyboard_open = false
 						self.outbox = nil
 						gui.set_enabled(gui.get_node("version"), true)
@@ -1901,7 +1933,7 @@ if action_id == hash("touch") then
 				if self.keyboard_open == false then
 					self.message = tostring(self.hport)
 					self.keyboard_chars = string.len(self.message)
-					gui.set_enabled(gui.get_node("Keyboard"), true)
+					gui.animate(gui.get_node("Keyboard"), "scale", vmath.vector3(0.85, 0.85, 1), gui.EASING_OUTSINE, 0.1)
 					self.keyboard_open = true
 					self.outbox = gui.get_node("listen")
 					gui.set_enabled(gui.get_node("version"), false)
@@ -1919,7 +1951,7 @@ if action_id == hash("touch") then
 						gui.set_text(gui.get_node("listenhint"), "listen on port:")
 						self.message = ""
 						self.keyboard_chars = string.len(self.message)
-						gui.set_enabled(gui.get_node("Keyboard"), false)
+						gui.animate(gui.get_node("Keyboard"), "scale", vmath.vector3(0, 0, 1), gui.EASING_OUTSINE, 0.1)
 						self.keyboard_open = false
 						self.outbox = nil
 						gui.set_enabled(gui.get_node("version"), true)
@@ -1933,32 +1965,6 @@ if action_id == hash("touch") then
 						gui.set_color(gui.get_node("ListenBg"), vmath.vector4(1, 0.4, 0.4, 1))
 						gui.set_color(gui.get_node("listenhint"), vmath.vector4(1, 0.4, 0.4, 1))
 						gui.set_text(gui.get_node("listenhint"), "enter a valid port")
-					end
-				end
-			end
-		end
-
-		if self.keyboard_chars >= 0 and self.outbox ~= nil and self.keyboard_open == true then
-			for i = 1, 40 do
-				local node = gui.get_node("letter" .. i)
-				if gui.pick_node(node, action.x, action.y) and action.pressed then
-					if self.outbox == gui.get_node("listen") then
-						if letters[i].output == "1" or letters[i].output == "2" or letters[i].output == "3" 
-						or letters[i].output == "4" or letters[i].output == "5" or letters[i].output == "6"
-						or letters[i].output == "7" or letters[i].output == "8" or letters[i].output == "9"
-						or letters[i].output == "0" then
-							if self.keyboard_chars <= 4 then
-								self.message = self.message .. letters[i].output
-								self.keyboard_chars = string.len(self.message)
-								gui.set_text(self.outbox, self.message)
-							end
-						elseif letters[i].output == "delete" and self.keyboard_chars <= 5 then
-							if self.keyboard_chars > 0 then
-								self.message = string.sub(self.message, 1, #self.message - 1)
-								self.keyboard_chars = string.len(self.message)
-								gui.set_text(self.outbox, self.message)
-							end
-						end
 					end
 				end
 			end
@@ -2059,8 +2065,8 @@ if action_id == hash("touch") then
 					gui.play_flipbook(gui.get_node("Theme"), "SwitchOn")
 					self.darktheme = true
 					msg.post("go#main", "theme", {theme = "dark"})
-					gui.set_color(gui.get_node("Version"), vmath.vector4(0.1, 0.1, 0.1, 1))
-					gui.set_color(gui.get_node("TopFrame"), vmath.vector4(0.1, 0.1, 0.1, 1))
+					gui.set_color(gui.get_node("Version"), vmath.vector4(0.1, 0.11, 0.11, 1))
+					gui.set_color(gui.get_node("TopFrame"), vmath.vector4(0.1, 0.11, 0.11, 1))
 					gui.set_color(gui.get_node("ResultsBanner"), vmath.vector4(0.3, 0.3, 0.35, 1))
 				elseif self.darktheme == true then
 					gui.play_flipbook(gui.get_node("Theme"), "SwitchOff")
@@ -2206,177 +2212,6 @@ if action_id == hash("touch") then
 
 	elseif texture == "developer" then
 
-		if gui.pick_node(gui.get_node("DevPublic"), action.x, action.y) then
-			if action.pressed then
-				if self.keyboard_open == false then
-					gui.animate(gui.get_node("DevPublic"), "scale", vmath.vector3(0.95, 0.95, 1), gui.EASING_OUTQUAD, 0.1)
-					gui.animate(gui.get_node("DevTorbulk"), "scale", vmath.vector3(0.9, 0.9, 1), gui.EASING_OUTQUAD, 0.1)
-					self.message = self.devpublic
-					self.keyboard_chars = string.len(self.message)
-					gui.set_enabled(gui.get_node("Keyboard"), true)
-					self.keyboard_open = true
-					self.outbox = gui.get_node("DevPublicText")
-					gui.set_enabled(gui.get_node("version"), false)
-					local devpublic = self.message
-					if #devpublic > 28 then
-						devpublic = devpublic:sub(1, 28) .. "\n" .. devpublic:sub(29)
-					end
-					gui.set_text(self.outbox, devpublic)
-				elseif self.keyboard_open == true then
-					gui.animate(gui.get_node("DevPublic"), "scale", vmath.vector3(0.9, 0.9, 1), gui.EASING_OUTQUAD, 0.1)
-					gui.animate(gui.get_node("DevTorbulk"), "scale", vmath.vector3(0.9, 0.9, 1), gui.EASING_OUTQUAD, 0.1)
-					gui.set_enabled(gui.get_node("Keyboard"), false)
-					self.keyboard_open = false
-					self.outbox = nil
-					gui.set_enabled(gui.get_node("version"), true)
-					if self.devpublic == "https://api4.ipify.org" then
-						gui.set_enabled(gui.get_node("DevPublicReset"), false)
-						gui.set_position(gui.get_node("DevPublic"), vmath.vector3(180, 540, 0))
-					else
-						gui.set_enabled(gui.get_node("DevPublicReset"), true)
-						gui.set_position(gui.get_node("DevPublic"), vmath.vector3(155, 540, 0))
-					end
-					if self.devtorbulk == "https://check.torproject.org/torbulkexitlist" then
-						gui.set_enabled(gui.get_node("DevTorbulkReset"), false)
-						gui.set_position(gui.get_node("DevTorbulk"), vmath.vector3(180, 460, 0))
-					else
-						gui.set_enabled(gui.get_node("DevTorbulkReset"), true)
-						gui.set_position(gui.get_node("DevTorbulk"), vmath.vector3(155, 460, 0))
-					end
-					save_dev({
-						developer = self.developer,
-						devpublic = self.devpublic,
-						devtorbulk = self.devtorbulk,
-						custom_inter = self.custom_inter
-					})
-				end
-			end
-		end
-
-		if gui.pick_node(gui.get_node("DevTorbulk"), action.x, action.y) then
-			if action.pressed then
-				if self.keyboard_open == false then
-					gui.animate(gui.get_node("DevTorbulk"), "scale", vmath.vector3(0.95, 0.95, 1), gui.EASING_OUTQUAD, 0.1)
-					gui.animate(gui.get_node("DevPublic"), "scale", vmath.vector3(0.9, 0.9, 1), gui.EASING_OUTQUAD, 0.1)
-					self.message = self.devtorbulk
-					self.keyboard_chars = string.len(self.message)
-					gui.set_enabled(gui.get_node("Keyboard"), true)
-					self.keyboard_open = true
-					self.outbox = gui.get_node("DevTorbulkText")
-					gui.set_enabled(gui.get_node("version"), false)
-					local devtorbulk = self.message
-					if #devtorbulk > 28 then
-						devtorbulk = devtorbulk:sub(1, 28) .. "\n" .. devtorbulk:sub(29)
-					end
-					gui.set_text(self.outbox, devtorbulk)
-				elseif self.keyboard_open == true then
-					gui.animate(gui.get_node("DevTorbulk"), "scale", vmath.vector3(0.9, 0.9, 1), gui.EASING_OUTQUAD, 0.1)
-					gui.animate(gui.get_node("DevPublic"), "scale", vmath.vector3(0.9, 0.9, 1), gui.EASING_OUTQUAD, 0.1)
-					gui.set_enabled(gui.get_node("Keyboard"), false)
-					self.keyboard_open = false
-					self.outbox = nil
-					gui.set_enabled(gui.get_node("version"), true)
-					if self.devpublic == "https://api4.ipify.org" then
-						gui.set_enabled(gui.get_node("DevPublicReset"), false)
-						gui.set_position(gui.get_node("DevPublic"), vmath.vector3(180, 540, 0))
-					else
-						gui.set_enabled(gui.get_node("DevPublicReset"), true)
-						gui.set_position(gui.get_node("DevPublic"), vmath.vector3(155, 540, 0))
-					end
-					if self.devtorbulk == "https://check.torproject.org/torbulkexitlist" then
-						gui.set_enabled(gui.get_node("DevTorbulkReset"), false)
-						gui.set_position(gui.get_node("DevTorbulk"), vmath.vector3(180, 460, 0))
-					else
-						gui.set_enabled(gui.get_node("DevTorbulkReset"), true)
-						gui.set_position(gui.get_node("DevTorbulk"), vmath.vector3(155, 460, 0))
-					end
-					save_dev({
-						developer = self.developer,
-						devpublic = self.devpublic,
-						devtorbulk = self.devtorbulk,
-						custom_inter = self.custom_inter
-					})
-				end
-			end
-		end
-
-		if gui.pick_node(gui.get_node("DevPublicReset"), action.x, action.y) then
-			if action.pressed and self.keyboard_open == false and 
-			self.devpublic ~= "https://api4.ipify.org"  then
-				self.devpublic = "https://api4.ipify.org" 
-				local devpublic = self.devpublic
-				if #devpublic > 28 then
-					devpublic = devpublic:sub(1, 28) .. "\n" .. devpublic:sub(29)
-				end
-				gui.set_text(gui.get_node("DevPublicText"), devpublic)
-				gui.set_enabled(gui.get_node("DevPublicReset"), false)
-				gui.set_position(gui.get_node("DevPublic"), vmath.vector3(180, 540, 0))
-				save_dev({
-					developer = self.developer,
-					devpublic = self.devpublic,
-					devtorbulk = self.devtorbulk,
-					custom_inter = self.custom_inter
-				})
-			end
-		end
-
-		if gui.pick_node(gui.get_node("DevTorbulkReset"), action.x, action.y) then
-			if action.pressed and self.keyboard_open == false and 
-			self.devtorbulk ~= "https://check.torproject.org/torbulkexitlist" then
-				self.devtorbulk = "https://check.torproject.org/torbulkexitlist"
-				local devtorbulk = self.devtorbulk
-				if #devtorbulk > 28 then
-					devtorbulk = devtorbulk:sub(1, 28) .. "\n" .. devtorbulk:sub(29)
-				end
-				gui.set_text(gui.get_node("DevTorbulkText"), devtorbulk)
-				gui.set_enabled(gui.get_node("DevTorbulkReset"), false)
-				gui.set_position(gui.get_node("DevTorbulk"), vmath.vector3(180, 460, 0))
-				save_dev({
-					developer = self.developer,
-					devpublic = self.devpublic,
-					devtorbulk = self.devtorbulk,
-					custom_inter = self.custom_inter
-				})
-			end
-		end
-
-		if self.keyboard_chars >= 0 and self.outbox ~= nil and self.keyboard_open == true then
-			for i = 1, 40 do
-				local node = gui.get_node("letter" .. i)
-				if gui.pick_node(node, action.x, action.y) and action.pressed then
-					if self.outbox == gui.get_node("DevPublicText") then
-						if letters[i].output ~= nil and letters[i].output ~= "delete" then
-							self.message = self.message .. letters[i].output
-							self.keyboard_chars = string.len(self.message)
-						elseif letters[i].output == "delete" and self.keyboard_chars > 0 then
-							self.message = string.sub(self.message, 1, #self.message - 1)
-							self.keyboard_chars = string.len(self.message)
-						end
-						local devpublic = self.message
-						if #devpublic > 28 then
-							devpublic = devpublic:sub(1, 28) .. "\n" .. devpublic:sub(29)
-						end
-						gui.set_text(self.outbox, devpublic)
-						self.devpublic = self.message
-					elseif self.outbox == gui.get_node("DevTorbulkText") then
-						if letters[i].output ~= nil and letters[i].output ~= "delete" then
-							self.message = self.message .. letters[i].output
-							self.keyboard_chars = string.len(self.message)
-						elseif letters[i].output == "delete" and self.keyboard_chars > 0 then
-							self.message = string.sub(self.message, 1, #self.message - 1)
-							self.keyboard_chars = string.len(self.message)
-						end
-						local devtorbulk = self.message
-						if #devtorbulk > 28 then
-							devtorbulk = devtorbulk:sub(1, 28) .. "\n" .. devtorbulk:sub(29)
-						end
-						gui.set_text(self.outbox, devtorbulk)
-						self.devtorbulk = self.message
-					end
-				end
-			end
-		end
-
 		if gui.pick_node(gui.get_node("results"), action.x, action.y) and self.keyboard_open == false then
 			local node_pos = gui.get_position(gui.get_node("results"))
 			if action.pressed then
@@ -2399,7 +2234,7 @@ if action_id == hash("touch") then
 				gui.set_position(gui.get_node("results"), node_pos)
 			end
 		end
-
+	
 		if gui.pick_node(gui.get_node("Back"), action.x, action.y) then
 			if action.pressed then
 				gui.set_alpha(gui.get_node("Back"), 0.5)
@@ -2410,9 +2245,148 @@ if action_id == hash("touch") then
 				end)
 			end
 		end
+	end
 
+	if self.keyboard_open == true and self.keyboard_chars >= 0 then
+		for i = 1, 33 do
+			if gui.pick_node(gui.get_node("letter" .. i), action.x, action.y) and action.pressed then
+				if letters_one[i].output == "space" then
+					if texture == "lobby" or texture == "files" then
+						self.message = self.message .. " "
+						self.keyboard_chars = string.len(self.message)
+						gui.set_text(self.outbox, self.message)
+					end
+				elseif letters_one[i].output == "enter" then
+					-- not used for now
+					print("enter")
+				elseif letters_one[i].output == "delete" then
+					if texture == "lobby" or texture == "files" then
+						if self.to_save_ip == true and self.keyboard_chars <= 23 then
+							if self.keyboard_chars > 0 then
+								self.message = string.sub(self.message, 1, #self.message - 1)
+								self.keyboard_chars = string.len(self.message)
+								gui.set_text(self.outbox, self.message)
+							end
+						end
+					elseif texture == "send" and self.keyboard_chars <= 5 then
+						if self.keyboard_chars > 0 then
+							self.message = string.sub(self.message, 1, #self.message - 1)
+							self.keyboard_chars = string.len(self.message)
+							gui.set_text(self.outbox, self.message)
+						end
+					elseif texture == "scan" then
+						if self.outbox == gui.get_node("port") and self.keyboard_chars <= 5 then
+							if self.keyboard_chars > 0 then
+								self.message = string.sub(self.message, 1, #self.message - 1)
+								self.keyboard_chars = string.len(self.message)
+								gui.set_text(self.outbox, self.message)
+							end
+						elseif self.outbox == gui.get_node("ip1") and self.keyboard_chars <= 3 then
+							if self.keyboard_chars > 0 then
+								self.message = string.sub(self.message, 1, #self.message - 1)
+								self.keyboard_chars = string.len(self.message)
+								gui.set_text(self.outbox, self.message)
+							end
+						end
+					end
+				end	
+				if self.keyboard_page == 1 then
+					if letters_one[i].output == "shift" then
+						if self.shift == 1 then
+							self.shift = 2
+							for j = 1, 33 do
+								gui.set_text(gui.get_node("letter" .. j), letters_one_shift[j].display)
+							end
+						elseif self.shift == 2 then
+							self.shift = 3
+						elseif self.shift == 3 then
+							self.shift = 1
+							for j = 1, 33 do
+								gui.set_text(gui.get_node("letter" .. j), letters_one[j].display)
+							end
+						end
+					elseif letters_one[i].output == "numbers" then
+						self.keyboard_page = 2
+						self.shift = 1
+						for j = 1, 33 do
+							gui.set_text(gui.get_node("letter" .. j), letters_two[j].display)
+						end
+					elseif letters_one[i].output ~= "numbers" and letters_one[i].output ~= "delete" 
+					and letters_one[i].output ~= "shift" and letters_one[i].output ~= "space" 
+					and letters_one[i].output ~= "enter" and self.shift == 1 then
+						if texture == "lobby" or texture == "files" then
+							if self.to_save_ip == true and self.keyboard_chars <= 22 then
+								self.message = self.message .. letters_one[i].output
+								self.keyboard_chars = string.len(self.message)
+								gui.set_text(self.outbox, self.message)
+							end
+						end
+					elseif letters_one_shift[i].output ~= "numbers" and letters_one_shift[i].output ~= "delete" 
+					and letters_one_shift[i].output ~= "shift" and letters_one_shift[i].output ~= "space" 
+					and letters_one_shift[i].output ~= "enter" and self.shift ~= 1 then
+						if texture == "lobby" or texture == "files" then
+							if self.to_save_ip == true and self.keyboard_chars <= 22 then
+								self.message = self.message .. letters_one_shift[i].output
+								self.keyboard_chars = string.len(self.message)
+								gui.set_text(self.outbox, self.message)
+							end
+						end
+						if self.shift == 2 then
+							self.shift = 1
+							for j = 1, 33 do
+								gui.set_text(gui.get_node("letter" .. j), letters_one[j].display)
+							end
+						end
+					end
+				elseif self.keyboard_page == 2 then
+					if letters_two[i].output == "letters" then
+						self.keyboard_page = 1
+						self.shift = 1
+						for j = 1, 33 do
+							gui.set_text(gui.get_node("letter" .. j), letters_one[j].display)
+						end
+					elseif letters_two[i].output ~= "letters" and letters_two[i].output ~= "delete" 
+					and letters_two[i].output ~= "space" and letters_two[i].output ~= "enter" then
+						if texture == "lobby" or texture == "files" then
+							if self.to_save_ip == true and self.keyboard_chars <= 22 then
+								self.message = self.message .. letters_two[i].output
+								self.keyboard_chars = string.len(self.message)
+								gui.set_text(self.outbox, self.message)
+							end
+						elseif texture == "send" then
+							if letters_two[i].output == "1" or letters_two[i].output == "2" or letters_two[i].output == "3" 
+							or letters_two[i].output == "4" or letters_two[i].output == "5" or letters_two[i].output == "6"
+							or letters_two[i].output == "7" or letters_two[i].output == "8" or letters_two[i].output == "9"
+							or letters_two[i].output == "0" then
+								if self.keyboard_chars <= 4 then
+									self.message = self.message .. letters_two[i].output
+									self.keyboard_chars = string.len(self.message)
+									gui.set_text(self.outbox, self.message)
+								end
+							end
+						elseif texture == "scan" then
+							if letters_two[i].output == "1" or letters_two[i].output == "2" or letters_two[i].output == "3" 
+							or letters_two[i].output == "4" or letters_two[i].output == "5" or letters_two[i].output == "6"
+							or letters_two[i].output == "7" or letters_two[i].output == "8" or letters_two[i].output == "9"
+							or letters_two[i].output == "0" then
+								if self.outbox == gui.get_node("port") and self.keyboard_chars <= 4 then
+									self.message = self.message .. letters_two[i].output
+									self.keyboard_chars = string.len(self.message)
+									gui.set_text(self.outbox, self.message)
+								elseif self.outbox == gui.get_node("ip1") and self.keyboard_chars <= 2 then
+									self.message = self.message .. letters_two[i].output
+									self.keyboard_chars = string.len(self.message)
+									gui.set_text(self.outbox, self.message)
+								end
+							end
+						end
+					end
+				end
+			end
+		end
 	end
-	end
+
+end
 
 	if action_id == hash("mouseback") then
 		if action.released then
