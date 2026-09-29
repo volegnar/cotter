@@ -1122,753 +1122,6 @@ nodes {
 nodes {
   position {
     x: 180.0
-    y: 110.0
-  }
-  scale {
-    x: 0.85
-    y: 0.85
-  }
-  type: TYPE_BOX
-  texture: "ui/Keyboard"
-  id: "Keyboard"
-  yanchor: YANCHOR_BOTTOM
-  inherit_alpha: true
-  size_mode: SIZE_MODE_AUTO
-}
-nodes {
-  position {
-    x: -180.0
-    y: 85.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 216.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter1"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: -140.0
-    y: 85.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 216.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter2"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: -100.0
-    y: 85.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 216.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter3"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: -60.0
-    y: 85.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 216.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter4"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: -20.0
-    y: 85.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 216.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter5"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: 20.0
-    y: 85.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 216.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter6"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: 60.0
-    y: 85.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 216.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter7"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: 100.0
-    y: 85.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 216.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter8"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: 140.0
-    y: 85.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 216.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter9"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: 180.0
-    y: 85.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 216.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter10"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: -160.0
-    y: 29.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 216.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter11"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: -120.0
-    y: 29.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 216.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter12"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: -80.0
-    y: 29.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 216.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter13"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: -40.0
-    y: 29.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 216.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter14"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    y: 29.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 216.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter15"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: 40.0
-    y: 29.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 216.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter16"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: 80.0
-    y: 29.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 216.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter17"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: 120.0
-    y: 29.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 216.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter18"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: 160.0
-    y: 29.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 216.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter19"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: -170.0
-    y: -27.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 232.0
-    y: 216.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter20"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: -120.0
-    y: -27.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 216.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter21"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: -80.0
-    y: -27.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 216.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter22"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: -40.0
-    y: -27.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 216.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter23"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    y: -27.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 216.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter24"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: 40.0
-    y: -27.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 216.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter25"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: 80.0
-    y: -27.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 216.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter26"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: 120.0
-    y: -27.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 216.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter27"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: 170.0
-    y: -27.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 232.0
-    y: 216.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter28"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: -150.0
-    y: -84.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 392.0
-    y: 220.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter29"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: -80.0
-    y: -84.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 220.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter30"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    y: -84.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 472.0
-    y: 224.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter31"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: 80.0
-    y: -84.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 152.0
-    y: 224.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter32"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: 150.0
-    y: -84.0
-  }
-  scale {
-    x: 0.25
-    y: 0.25
-  }
-  size {
-    x: 392.0
-    y: 224.0
-  }
-  type: TYPE_TEXT
-  text: "."
-  font: "main"
-  id: "letter33"
-  parent: "Keyboard"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    y: 160.0
-  }
-  scale {
-    x: 1.2
-    y: 1.2
-  }
-  type: TYPE_BOX
-  texture: "ui/LongestBox"
-  id: "Note"
-  parent: "Keyboard"
-  inherit_alpha: true
-  size_mode: SIZE_MODE_AUTO
-}
-nodes {
-  position {
-    x: -145.0
-  }
-  scale {
-    x: 0.3
-    y: 0.3
-  }
-  size {
-    x: 1000.0
-    y: 120.0
-  }
-  type: TYPE_TEXT
-  font: "main"
-  id: "note"
-  pivot: PIVOT_W
-  parent: "Note"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: 120.0
-    y: 50.0
-  }
-  scale {
-    x: 0.3
-    y: 0.3
-  }
-  size {
-    x: 240.0
-    y: 120.0
-  }
-  type: TYPE_TEXT
-  text: "save"
-  font: "main"
-  id: "notesave"
-  parent: "Note"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: -120.0
-    y: 50.0
-  }
-  scale {
-    x: 0.3
-    y: 0.3
-  }
-  size {
-    x: 240.0
-    y: 120.0
-  }
-  type: TYPE_TEXT
-  text: "cancel"
-  font: "main"
-  id: "notecancel"
-  parent: "Note"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: 180.0
     y: 14.0
   }
   scale {
@@ -4431,6 +3684,753 @@ nodes {
   pivot: PIVOT_NE
   inherit_alpha: true
   size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 180.0
+    y: 110.0
+  }
+  scale {
+    x: 0.85
+    y: 0.85
+  }
+  type: TYPE_BOX
+  texture: "ui/Keyboard"
+  id: "Keyboard"
+  yanchor: YANCHOR_BOTTOM
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -180.0
+    y: 85.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 216.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter1"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -140.0
+    y: 85.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 216.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter2"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -100.0
+    y: 85.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 216.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter3"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -60.0
+    y: 85.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 216.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter4"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -20.0
+    y: 85.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 216.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter5"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 20.0
+    y: 85.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 216.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter6"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 60.0
+    y: 85.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 216.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter7"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 100.0
+    y: 85.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 216.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter8"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 140.0
+    y: 85.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 216.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter9"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 180.0
+    y: 85.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 216.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter10"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -160.0
+    y: 29.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 216.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter11"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -120.0
+    y: 29.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 216.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter12"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -80.0
+    y: 29.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 216.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter13"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -40.0
+    y: 29.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 216.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter14"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    y: 29.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 216.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter15"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 40.0
+    y: 29.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 216.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter16"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 80.0
+    y: 29.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 216.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter17"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 120.0
+    y: 29.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 216.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter18"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 160.0
+    y: 29.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 216.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter19"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -170.0
+    y: -27.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 232.0
+    y: 216.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter20"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -120.0
+    y: -27.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 216.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter21"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -80.0
+    y: -27.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 216.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter22"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -40.0
+    y: -27.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 216.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter23"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    y: -27.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 216.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter24"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 40.0
+    y: -27.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 216.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter25"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 80.0
+    y: -27.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 216.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter26"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 120.0
+    y: -27.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 216.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter27"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 170.0
+    y: -27.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 232.0
+    y: 216.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter28"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -150.0
+    y: -84.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 392.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter29"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -80.0
+    y: -84.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 220.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter30"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    y: -84.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 472.0
+    y: 224.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter31"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 80.0
+    y: -84.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 152.0
+    y: 224.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter32"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 150.0
+    y: -84.0
+  }
+  scale {
+    x: 0.25
+    y: 0.25
+  }
+  size {
+    x: 392.0
+    y: 224.0
+  }
+  type: TYPE_TEXT
+  text: "."
+  font: "main"
+  id: "letter33"
+  parent: "Keyboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    y: 160.0
+  }
+  scale {
+    x: 1.2
+    y: 1.2
+  }
+  type: TYPE_BOX
+  texture: "ui/LongestBox"
+  id: "Note"
+  parent: "Keyboard"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -145.0
+  }
+  scale {
+    x: 0.3
+    y: 0.3
+  }
+  size {
+    x: 1000.0
+    y: 120.0
+  }
+  type: TYPE_TEXT
+  font: "main"
+  id: "note"
+  pivot: PIVOT_W
+  parent: "Note"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 120.0
+    y: 50.0
+  }
+  scale {
+    x: 0.3
+    y: 0.3
+  }
+  size {
+    x: 240.0
+    y: 120.0
+  }
+  type: TYPE_TEXT
+  text: "save"
+  font: "main"
+  id: "notesave"
+  parent: "Note"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -120.0
+    y: 50.0
+  }
+  scale {
+    x: 0.3
+    y: 0.3
+  }
+  size {
+    x: 240.0
+    y: 120.0
+  }
+  type: TYPE_TEXT
+  text: "cancel"
+  font: "main"
+  id: "notecancel"
+  parent: "Note"
+  inherit_alpha: true
 }
 nodes {
   position {
